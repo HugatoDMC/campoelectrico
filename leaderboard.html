@@ -9,6 +9,12 @@
   body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #0b0f1a; color: #e8ecf5; min-height: 100vh; }
   .wrap { max-width: 900px; margin: 0 auto; padding: 20px; }
 
+  .topbar { display: flex; align-items: center; margin-bottom: 14px; }
+  .back { display: inline-flex; align-items: center; gap: 6px; color: #9aa6c2; text-decoration: none; font-size: 14px; font-weight: 600;
+          padding: 8px 14px; border-radius: 999px; border: 1px solid #1e2740; background: #0d1222;
+          transition: color .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .back:hover { color: #ffc800; border-color: #ffc800; box-shadow: 0 0 12px rgba(255, 200, 0, .3); }
+
   .search { width: 100%; padding: 14px 18px; border-radius: 12px; border: 1px solid #1e2740; background: #0d1222; color: #e8ecf5; font-size: 16px; outline: none; }
   .search:focus { border-color: #ffc800; }
   .panel { margin-top: 20px; background: #0d1222; border: 1px solid #1e2740; border-radius: 16px; padding: 24px; }
@@ -107,6 +113,7 @@
     .modal { padding: 12px; }
     .modal-box { padding: 24px 16px; }
     .modal-box .avatar { --av: 104px; }
+    .back { font-size: 13px; padding: 7px 12px; }
   }
 
   /* Celulares muy angostos */
@@ -126,6 +133,10 @@
 </head>
 <body>
 <div class="wrap">
+  <div class="topbar">
+    <a class="back" href="index.html">← Volver al server</a>
+  </div>
+
   <input class="search" id="search" type="search" placeholder="Buscar..." autocomplete="off">
   <div class="panel">
     <h1 id="title">Top Niveles</h1>
