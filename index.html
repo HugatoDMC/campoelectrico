@@ -63,7 +63,7 @@
 </div>
 
 <script>
-const API_URL = "http://78.154.103.43:11921"; // cambiar por la URL final (https si usás túnel)
+const DATA_URL = "top.json"; // archivo publicado por el bot en el mismo repo
 
 let all = [];
 
@@ -116,7 +116,7 @@ function render(term = "") {
 async function load() {
   const status = document.getElementById("status");
   try {
-    const r = await fetch(`${API_URL}/top?limit=100`);
+    const r = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
     if (!r.ok) throw new Error(r.status);
     const data = await r.json();
     all = data.users;
@@ -124,7 +124,7 @@ async function load() {
     render(document.getElementById("search").value);
   } catch (e) {
     status.hidden = false;
-    status.textContent = "No se pudo cargar el ranking. Revisá que la API esté online.";
+    status.textContent = "No se pudo cargar el ranking.";
   }
 }
 
