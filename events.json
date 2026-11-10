@@ -23,6 +23,15 @@
         "1353217582374588466",
         "1097269322637901924"
       ]
+    },
+    {
+      "name": "Evento Geometry Dash by Walmart",
+      "type": "top",
+      "icon": "gd.png",
+      "start": "2026-11-1",
+      "end": "2026-11-1",
+      "top": [
+      ]
     }
   ]
 }
