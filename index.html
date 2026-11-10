@@ -270,7 +270,7 @@ function applyServer(data) {
   setIcon(data.icon);
 
   document.getElementById("desc").textContent =
-    data.description || "Bienvenido al server. Acá vas a encontrar el ranking de niveles, el staff y las actividades.";
+    data.description || "Un saludo a repli y a ezhenatos.";
 
   if (typeof data.online === "number") {
     document.getElementById("online").textContent = fmt(data.online);
