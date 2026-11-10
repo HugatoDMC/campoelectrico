@@ -1,0 +1,94 @@
+{
+  "year": 2025,
+  "server": "Campo Eléctrico",
+  "users": [
+    {
+      "user_id": "1206731304033321001",
+      "name": "Cristian revividor de chats",
+      "xp": 4288605,
+      "level": 293,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "889565110744518677",
+      "name": "Josh",
+      "xp": 2162680,
+      "level": 208,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "889519969249927208",
+      "name": "Hazy",
+      "xp": 1585407,
+      "level": 179,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "715631964249391213",
+      "name": "Repli",
+      "xp": 1269183,
+      "level": 160,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "895378001724841984",
+      "name": "Ness",
+      "xp": 1260951,
+      "level": 159,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "1117559388643790929",
+      "name": "Mori Daniel",
+      "xp": 1110052,
+      "level": 149,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "1250810900051529768",
+      "name": "Walmart",
+      "xp": 805005,
+      "level": 127,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    },
+    {
+      "user_id": "845486993155686406",
+      "name": "! HugatoDMC",
+      "xp": 789311,
+      "level": 126,
+      "avatar": null,
+      "decoration": null,
+      "banner": null,
+      "color": null,
+      "roles": []
+    }
+  ]
+}
