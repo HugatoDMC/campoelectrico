@@ -43,7 +43,7 @@
   .creator-avatar { position: relative; width: 76px; height: 76px; border-radius: 50%; flex-shrink: 0; overflow: hidden;
                     border: 2px solid var(--gold); box-shadow: 0 0 18px rgba(255,200,0,.35); background: #16213d;
                     display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; color: var(--gold); }
-  .creator-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; position: relative; }
+  .creator-avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
   .creator-info { flex: 1; min-width: 180px; }
   .creator-label { font-size: 12px; text-transform: uppercase; letter-spacing: .12em; color: var(--mute); }
   .creator-name { font-size: 22px; font-weight: 700; color: var(--text); }
@@ -132,7 +132,7 @@
   <section class="creator reveal" style="--d:.6s">
     <div class="creator-avatar">
       <span>E</span>
-      <img src="assets/icons/ezhenatos.png" alt="Ezhenatos" onerror="this.remove()">
+      <img src="assets/icons/ezhenatosdc.png" alt="Ezhenatos" onerror="this.remove()">
     </div>
     <div class="creator-info">
       <div class="creator-label">Creador del server</div>
