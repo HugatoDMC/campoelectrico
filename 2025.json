@@ -7,10 +7,10 @@
       "name": "Cristian revividor de chats",
       "xp": 4288605,
       "level": 293,
-      "avatar": null,
+      "avatar": "https://cdn.discordapp.com/avatars/1206731304033321001/d818f750794019e5ee813fb00c23a904.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": null,
+      "color": "#fa7c00",
       "roles": []
     },
     {
@@ -18,10 +18,10 @@
       "name": "Josh",
       "xp": 2162680,
       "level": 208,
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "avatar": "https://cdn.discordapp.com/avatars/889565110744518677/a8a4a2600aab03065349e5aaa5dd8b34.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_13913a00bd9990ab4102a3bf069f0f3f.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/889565110744518677/a_9a1bf39cf09ec1029b71890fda4ad596.png?size=512",
+      "color": "#15006a",
       "roles": []
     },
     {
@@ -29,10 +29,10 @@
       "name": "Hazy",
       "xp": 1585407,
       "level": 179,
-      "avatar": null,
-      "decoration": null,
+      "avatar": "https://cdn.discordapp.com/avatars/889519969249927208/cac413a107cdec284c328e67035f5207.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_5e8abacc7a7454d6b08b5cc84cac1d80.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#3c819f",
       "roles": []
     },
     {
@@ -40,7 +40,7 @@
       "name": "???",
       "xp": 1275104,
       "level": 160,
-      "avatar": null,
+      "avatar": "https://cdn.discordapp.com/embed/avatars/3.png",
       "decoration": null,
       "banner": null,
       "color": null,
@@ -51,10 +51,10 @@
       "name": "Repli",
       "xp": 1269183,
       "level": 160,
-      "avatar": null,
+      "avatar": "https://cdn.discordapp.com/avatars/715631964249391213/2d525936cf982c3b9b53b3fbd4a1f9f1.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": null,
+      "color": "#73d399",
       "roles": []
     },
     {
@@ -62,10 +62,10 @@
       "name": "Ness",
       "xp": 1260951,
       "level": 159,
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "avatar": "https://cdn.discordapp.com/avatars/895378001724841984/73a1b0c17171cf7b45bc828d9fd4c556.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f997880d666be69b7782bb377617b4fd.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/895378001724841984/79883adaf5765c1d5f6969030b33f12a.png?size=512",
+      "color": "#4f1e80",
       "roles": []
     },
     {
@@ -73,10 +73,10 @@
       "name": "Mori Daniel",
       "xp": 1110052,
       "level": 149,
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "avatar": "https://cdn.discordapp.com/avatars/1117559388643790929/65a55010bc756bc6ff415345cbe06c18.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_22db6b911f5ad54f3939d665fe2a88cc.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/1117559388643790929/a_c0e182b3324eb2e9a52bfd6e9cdb0a45.png?size=512",
+      "color": "#510027",
       "roles": []
     },
     {
@@ -84,7 +84,7 @@
       "name": "???",
       "xp": 1007673,
       "level": 142,
-      "avatar": null,
+      "avatar": "https://cdn.discordapp.com/avatars/1392972831704485928/bfad81e9be2938194cbd3cfcc707c3eb.png?size=1024",
       "decoration": null,
       "banner": null,
       "color": null,
@@ -95,9 +95,9 @@
       "name": "Walmart",
       "xp": 805005,
       "level": 127,
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
+      "avatar": "https://cdn.discordapp.com/avatars/1250810900051529768/1a6d41e180f6ded66e9b1b9c0611557c.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_1bb935d2475c15b79d48a27deb060b70.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/1250810900051529768/a_ba5ca35e330314c011d6cf65bab879ab.png?size=512",
       "color": null,
       "roles": []
     },
@@ -106,10 +106,10 @@
       "name": "! HugatoDMC",
       "xp": 789311,
       "level": 126,
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "avatar": "https://cdn.discordapp.com/avatars/845486993155686406/ff57a62efa4c64557e57493c89f8a2b0.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_d943453ba3b3f0286c0a76a3b0b0f896.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/845486993155686406/c65a360e6ef204c51be3f45ceaeff3a7.png?size=512",
+      "color": "#5d078f",
       "roles": []
     }
   ]
