@@ -12,7 +12,12 @@
   .search { width: 100%; padding: 14px 18px; border-radius: 12px; border: 1px solid #1e2740; background: #0d1222; color: #e8ecf5; font-size: 16px; outline: none; }
   .search:focus { border-color: #ffc800; }
   .panel { margin-top: 20px; background: #0d1222; border: 1px solid #1e2740; border-radius: 16px; padding: 24px; }
-  h1 { text-align: center; color: #ffc800; margin: 0 0 24px; font-size: 32px; text-shadow: 0 0 12px rgba(255, 200, 0, .5); }
+  h1 { text-align: center; color: #ffc800; margin: 0 0 16px; font-size: 32px; text-shadow: 0 0 12px rgba(255, 200, 0, .5); }
+
+  .tabs { display: flex; justify-content: center; gap: 8px; margin-bottom: 24px; }
+  .tab { background: #101728; color: #9aa6c2; border: 1px solid #1e2740; padding: 8px 18px; border-radius: 999px;
+         cursor: pointer; font-size: 14px; font-weight: 600; }
+  .tab.active { color: #ffc800; border-color: #ffc800; box-shadow: 0 0 12px rgba(255, 200, 0, .3); }
 
   .podium { display: flex; justify-content: center; align-items: flex-end; gap: 16px; margin-bottom: 24px; }
   .card { position: relative; flex: 1; max-width: 230px; border-radius: 14px; text-align: center; padding: 16px 12px;
@@ -23,7 +28,6 @@
   .card.third { background: linear-gradient(#2e1b10, #0d1222); border-color: #a0622d; --glow: #a0622d; }
   .card:hover { transform: translateY(-6px); box-shadow: 0 0 26px var(--glow), 0 0 8px var(--glow); }
 
-  /* Capa de partículas: sin overflow hidden para que suban por encima del cuadro */
   .fx { position: absolute; inset: 0; pointer-events: none; }
   .spark { position: absolute; border-radius: 50%; background: var(--c); opacity: 0;
            width: var(--s); height: var(--s);
@@ -80,7 +84,11 @@
 <div class="wrap">
   <input class="search" id="search" type="search" placeholder="Buscar..." autocomplete="off">
   <div class="panel">
-    <h1>Top Niveles</h1>
+    <h1 id="title">Top Niveles</h1>
+    <div class="tabs">
+      <button class="tab active" data-tab="actual">Actual</button>
+      <button class="tab" data-tab="y2025">2025</button>
+    </div>
     <div id="podium" class="podium"></div>
     <div id="list"></div>
     <div id="status" class="status">Cargando...</div>
@@ -95,17 +103,21 @@
 </div>
 
 <script>
-const DATA_URL = "top.json";
+const DATA_FILES = { actual: "top.json", y2025: "2025.json" };
+const TITLES = { actual: "Top Niveles", y2025: "Top Niveles 2025" };
 const MEDAL = { 1: "#ffc800", 2: "#c0c6d4", 3: "#cd7f32" };
 
-// Configuración de las partículas por puesto
 const SPARKS = {
-  1: { n: 26, dur: [.5, 1.0], rise: [110, 200], size: [3, 8], max: 1,   delay: [0, 1.2] }, // fuego rápido y agresivo
-  2: { n: 12, dur: [1.2, 2.0], rise: [50, 95],  size: [2, 5], max: .6, delay: [0, 2.5] }, // plata suave
-  3: { n: 14, dur: [1.6, 2.6], rise: [40, 80],  size: [2, 4], max: .8, delay: [0, 3.0] }, // bronce
+  1: { n: 26, dur: [.5, 1.0], rise: [110, 200], size: [3, 8], max: 1,   delay: [0, 1.2] },
+  2: { n: 12, dur: [1.2, 2.0], rise: [50, 95],  size: [2, 5], max: .6, delay: [0, 2.5] },
+  3: { n: 14, dur: [1.6, 2.6], rise: [40, 80],  size: [2, 4], max: .8, delay: [0, 3.0] },
 };
 
-let all = [];
+let mode = "actual";
+let loaded = false;
+let loadError = false;
+const datasets = { actual: [], y2025: [] };
+let current = [];
 
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -119,10 +131,8 @@ function avatarHTML(u) {
   return `<div class="avatar"><img class="pfp" src="${esc(pfp)}" alt="">${deco}</div>`;
 }
 
-// Laurel tipo corona: dos ramas que nacen abajo al centro, suben curvando hacia afuera
-// y tienen hojas pareadas a lo largo del tallo. La rama derecha es el espejo de la izquierda.
 function laurelSVG(color) {
-  const P = [[50, 90], [14, 86], [0, 46], [20, 12]]; // puntos de control de la rama
+  const P = [[50, 90], [14, 86], [0, 46], [20, 12]];
 
   const pt = t => {
     const u = 1 - t;
@@ -138,7 +148,6 @@ function laurelSVG(color) {
     return Math.atan2(dy, dx) * 180 / Math.PI;
   };
 
-  // Hoja con forma de gota apuntando en +X, después se rota y ubica en el tallo
   const leaf = (x, y, a) =>
     `<path d="M0 0 Q5 -4.5 10 0 Q5 4.5 0 0Z" fill="${color}"
        transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(1)})"/>`;
@@ -160,7 +169,6 @@ function laurelSVG(color) {
   </svg>`;
 }
 
-// Partículas que suben desde el cuadro, con la intensidad de cada puesto
 function fillSparks(el, pos) {
   const cfg = SPARKS[pos];
   const color = MEDAL[pos];
@@ -198,18 +206,31 @@ function rowHTML(u) {
 }
 
 function render(term = "") {
-  const t = term.trim().toLowerCase();
   const podium = document.getElementById("podium");
   const list = document.getElementById("list");
+  const status = document.getElementById("status");
 
+  if (!current.length) {
+    podium.innerHTML = "";
+    list.innerHTML = "";
+    status.hidden = false;
+    if (!loaded) status.textContent = "Cargando...";
+    else if (loadError && mode === "actual") status.textContent = "No se pudo cargar el ranking.";
+    else if (mode === "y2025") status.textContent = "Todavía no hay datos de 2025.";
+    else status.textContent = "No hay usuarios todavía.";
+    return;
+  }
+  status.hidden = true;
+
+  const t = term.trim().toLowerCase();
   if (t) {
     podium.innerHTML = "";
-    const matches = all.filter(u => u.name.toLowerCase().includes(t));
+    const matches = current.filter(u => u.name.toLowerCase().includes(t));
     list.innerHTML = matches.map(rowHTML).join("") || `<div class="status">Sin resultados</div>`;
     return;
   }
 
-  const top = all.slice(0, 3);
+  const top = current.slice(0, 3);
   const slots = [[1, "second"], [0, "first"], [2, "third"]];
   podium.innerHTML = slots.filter(([i]) => top[i]).map(([i, c]) => cardHTML(top[i], c)).join("");
 
@@ -218,24 +239,27 @@ function render(term = "") {
     fillSparks(card.querySelector(".fx"), pos);
   });
 
-  list.innerHTML = all.slice(3).map(rowHTML).join("");
+  list.innerHTML = current.slice(3).map(rowHTML).join("");
 }
 
 function openModal(u) {
-  const roles = u.roles || [];
-  const chips = roles.length
-    ? roles.map(r => {
-        const c = safeColor(r.color, "#9aa6c2");
-        return `<span class="chip" style="border-color:${c};color:${c}">${esc(r.name)}</span>`;
-      }).join("")
-    : `<div class="sub">Sin roles</div>`;
+  let rolesBlock = "";
+  if (mode === "actual") {
+    const roles = u.roles || [];
+    const chips = roles.length
+      ? roles.map(r => {
+          const c = safeColor(r.color, "#9aa6c2");
+          return `<span class="chip" style="border-color:${c};color:${c}">${esc(r.name)}</span>`;
+        }).join("")
+      : `<div class="sub">Sin roles</div>`;
+    rolesBlock = `<h2>Roles en el server</h2><div class="roles">${chips}</div>`;
+  }
 
   document.getElementById("modal-body").innerHTML = `
     ${avatarHTML(u)}
     <div class="name" style="margin-top:14px">${esc(u.name)}</div>
     <div class="sub">#${u.pos} · Nivel ${u.level} · ${fmt(u.xp)} XP</div>
-    <h2>Roles en el server</h2>
-    <div class="roles">${chips}</div>`;
+    ${rolesBlock}`;
   document.getElementById("modal").hidden = false;
 }
 
@@ -243,27 +267,47 @@ function closeModal() {
   document.getElementById("modal").hidden = true;
 }
 
-async function load() {
-  const status = document.getElementById("status");
+function showMode() {
+  current = [...datasets[mode]].sort((a, b) => b.xp - a.xp);
+  current.forEach((u, i) => u.pos = i + 1);
+  document.getElementById("title").textContent = TITLES[mode];
+  render(document.getElementById("search").value);
+}
+
+async function fetchJSON(file) {
+  const r = await fetch(`${file}?t=${Date.now()}`, { cache: "no-store" });
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
+async function loadAll() {
   try {
-    const r = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
-    if (!r.ok) throw new Error(r.status);
-    const data = await r.json();
-    all = data.users;
-    status.hidden = true;
-    render(document.getElementById("search").value);
+    datasets.actual = (await fetchJSON(DATA_FILES.actual)).users;
+    loadError = false;
   } catch (e) {
-    status.hidden = false;
-    status.textContent = "No se pudo cargar el ranking.";
+    loadError = true;
   }
+  try {
+    datasets.y2025 = (await fetchJSON(DATA_FILES.y2025)).users;
+  } catch (e) {
+    datasets.y2025 = [];
+  }
+  loaded = true;
+  showMode();
 }
 
 document.getElementById("search").addEventListener("input", e => render(e.target.value));
 
+document.querySelectorAll(".tab").forEach(btn => btn.addEventListener("click", () => {
+  mode = btn.dataset.tab;
+  document.querySelectorAll(".tab").forEach(b => b.classList.toggle("active", b === btn));
+  showMode();
+}));
+
 document.addEventListener("click", e => {
   const el = e.target.closest("[data-pos]");
   if (!el) return;
-  const u = all[Number(el.dataset.pos) - 1];
+  const u = current[Number(el.dataset.pos) - 1];
   if (u) openModal(u);
 });
 
@@ -275,8 +319,8 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeModal();
 });
 
-load();
-setInterval(load, 60000);
+loadAll();
+setInterval(loadAll, 60000);
 </script>
 </body>
 </html>
