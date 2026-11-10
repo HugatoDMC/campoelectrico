@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794294955,
+  "updated": 1794295259,
   "users": [
     {
       "pos": 1,
@@ -63,6 +63,19 @@
           "color": "#2ecc71"
         }
       ]
+    },
+    {
+      "pos": 5,
+      "user_id": "1061435806184656967",
+      "xp": 1999,
+      "level": 19,
+      "progress": 99.5,
+      "name": "ElGatoGamingXD",
+      "avatar": "https://cdn.discordapp.com/avatars/1061435806184656967/2d856d2140e72760e3c8342dfff6bccd.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c7d0b92c2c06bbb3fed297b34a51d5e5.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/1061435806184656967/a_22b6801a1207bb53e49ff65261c0f65e.gif?size=512",
+      "color": "#a200ff",
+      "roles": []
     }
   ]
 }
