@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T18:26:22+00:00",
+  "updated": "2026-11-10T18:43:18+00:00",
   "users": {
     "1251276588616781838": {
       "name": "Ashley",
@@ -15,6 +15,21 @@
       "name": "Raff",
       "avatar": "https://cdn.discordapp.com/avatars/1226264836170584208/0927853d252482d224d1cb9c21a21368.png?size=256",
       "decoration": null
+    },
+    "690390742908272720": {
+      "name": "Butt3rg0at",
+      "avatar": "https://cdn.discordapp.com/avatars/690390742908272720/22196674999bc90de3e0bfe0548bea1d.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_10b9f886b513b77ccdd67c8784f1a496.png?size=240"
+    },
+    "1353217582374588466": {
+      "name": "Tacosdedino",
+      "avatar": "https://cdn.discordapp.com/avatars/1353217582374588466/5983465ce06c887d466d8ee31b532a86.png?size=256",
+      "decoration": null
+    },
+    "1097269322637901924": {
+      "name": "!! Fernet",
+      "avatar": "https://cdn.discordapp.com/avatars/1097269322637901924/0c871597ca9e95b7838a76c827095e95.png?size=256",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_ab3d61ff09b06bb1e762d6a577b78469.png?size=240"
     }
   }
 }

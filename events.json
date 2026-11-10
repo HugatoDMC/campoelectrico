@@ -1,7 +1,7 @@
 {
   "events": [
     {
-      "name": "Concurso de Historias Hallowen",
+      "name": "Concurso de Historias Hallowen 2026",
       "type": "top",
       "icon": "hallowen2026.png",
       "start": "2026-10-18",
@@ -10,6 +10,18 @@
         "1251276588616781838",
         "845486993155686406",
         "1226264836170584208"
+      ]
+    },
+    {
+      "name": "Concurso de arte Hallowen 2026",
+      "type": "top",
+      "icon": "winnerha2026.png",
+      "start": "2026-10-12",
+      "end": "2026-10-19",
+      "top": [
+        "690390742908272720",
+        "1353217582374588466",
+        "1097269322637901924"
       ]
     }
   ]
