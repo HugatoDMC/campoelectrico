@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eventos · Campo Eléctrico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#060a14; --panel:rgba(10,16,32,.85); --line:#1b2a4a; --cyan:#7fe0ff; --blue:#4f9dff; --gold:#ffc800; --text:#e8eefb; --mute:#8f9dbd; --f:"Chakra Petch",system-ui,sans-serif; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,sans-serif; background:radial-gradient(ellipse 70% 45% at 50% 100%,#0e2a4d 0%,transparent 70%),var(--bg); background-attachment:fixed; color:var(--text); min-height:100vh; }
+  body::before { content:""; position:fixed; inset:0; pointer-events:none; z-index:0; background-image:linear-gradient(rgba(127,224,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(127,224,255,.05) 1px,transparent 1px); background-size:44px 44px; -webkit-mask-image:linear-gradient(#000,transparent 75%); mask-image:linear-gradient(#000,transparent 75%); }
+  button:focus-visible,a:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+  .wrap { position:relative; z-index:1; max-width:920px; margin:0 auto; padding:22px 20px 48px; }
+
+  .topbar { display:flex; align-items:center; margin-bottom:14px; }
+  .back { display:inline-flex; align-items:center; gap:6px; color:var(--mute); text-decoration:none; font-size:14px; font-weight:600; padding:9px 16px; border-radius:999px; border:1px solid var(--line); background:rgba(10,16,32,.8); transition:color .2s,border-color .2s,box-shadow .2s; }
+  .back:hover { color:var(--gold); border-color:var(--gold); box-shadow:0 0 14px rgba(255,200,0,.3); }
+  .search { width:100%; padding:14px 18px 14px 46px; border-radius:14px; border:1px solid var(--line); color:var(--text); font-size:16px; outline:none; background:rgba(10,16,32,.85) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%238f9dbd' stroke-width='2' stroke-linecap='round'><circle cx='11' cy='11' r='7'/><path d='m20 20-3.5-3.5'/></svg>") no-repeat 16px center; transition:border-color .2s,box-shadow .2s; }
+  .search:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(127,224,255,.15),0 0 20px rgba(127,224,255,.2); }
+  .panel { position:relative; margin-top:18px; background:var(--panel); border:1px solid var(--line); border-radius:22px; padding:28px 24px; backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(127,224,255,.18); }
+  .panel::before { content:""; position:absolute; left:50%; top:-1px; width:90px; height:3px; margin-left:-45px; border-radius:3px; background:var(--gold); box-shadow:0 0 16px var(--gold); }
+  h1 { font-family:var(--f); text-align:center; color:var(--gold); margin:6px 0 18px; font-size:36px; font-weight:700; letter-spacing:.02em; text-shadow:0 0 18px rgba(255,200,0,.45),0 0 2px rgba(255,200,0,.8); }
+  .tabs { display:flex; justify-content:center; gap:4px; width:fit-content; margin:0 auto 24px; padding:4px; border-radius:999px; background:#0a1020; border:1px solid var(--line); }
+  .tab { background:transparent; color:var(--mute); border:1px solid transparent; padding:8px 20px; border-radius:999px; cursor:pointer; font-size:14px; font-weight:600; font-family:inherit; transition:color .2s,background .2s,box-shadow .2s; }
+  .tab:hover { color:var(--text); }
+  .tab.active { color:#1a1300; background:var(--gold); box-shadow:0 0 16px rgba(255,200,0,.45); }
+
+  .list { display:grid; gap:14px; }
+  .event { --st:#34426a; position:relative; display:grid; grid-template-columns:auto 1fr; grid-template-areas:"icon head" "icon body"; column-gap:20px; row-gap:12px; padding:18px 22px 18px 24px; border-radius:22px; background:linear-gradient(90deg,rgba(20,32,60,.92),rgba(10,16,32,.88)); border:1px solid var(--line); overflow:hidden; }
+  .event::before { content:""; position:absolute; left:0; top:14%; bottom:14%; width:3px; border-radius:0 3px 3px 0; background:var(--st); box-shadow:0 0 12px var(--st); }
+  .event.live { --st:var(--cyan); border-color:rgba(127,224,255,.5); box-shadow:0 0 28px rgba(127,224,255,.13); }
+  .event.soon { --st:var(--gold); }
+  .event.done { opacity:.92; }
+  .ev-icon { grid-area:icon; width:104px; height:104px; border-radius:20px; border:1px solid rgba(127,224,255,.45); background:#0a1020; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+  .ev-icon img { width:100%; height:100%; object-fit:cover; display:block; }
+  .ev-icon.noimg::after { content:""; width:44%; height:44%; opacity:.7; background:no-repeat center/contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%237fe0ff'><path d='M13 2 4 14h6l-1 8 9-12h-6z'/></svg>"); }
+  .ev-head { grid-area:head; min-width:0; }
+  .ev-body { grid-area:body; min-width:0; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:8px; }
+  .chip { display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; padding:3px 11px; border-radius:999px; border:1px solid var(--line); color:var(--mute); }
+  .chip.live { color:var(--cyan); border-color:rgba(127,224,255,.6); background:rgba(127,224,255,.08); }
+  .chip.soon { color:var(--gold); border-color:rgba(255,200,0,.55); }
+  .dot { width:7px; height:7px; border-radius:50%; background:currentColor; box-shadow:0 0 8px currentColor; }
+  .live .dot { animation:pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity:.3; } }
+  .ev-name { font-family:var(--f); font-size:22px; font-weight:700; line-height:1.2; overflow-wrap:anywhere; }
+  .ev-dates { margin-top:4px; font-size:14px; color:var(--mute); }
+
+  .tops { display:flex; align-items:flex-end; gap:22px; padding:4px 10px 0; flex-wrap:wrap; }
+  .top { --av:52px; --m:#cd7f32; display:flex; flex-direction:column; align-items:center; gap:8px; width:calc(var(--av) + 30px); }
+  .top.t1 { --av:76px; --m:var(--gold); } .top.t2 { --av:62px; --m:#c0c6d4; }
+  .avatar { position:relative; width:var(--av,64px); height:var(--av,64px); flex-shrink:0; }
+  .avatar .pfp { width:100%; height:100%; border-radius:50%; object-fit:cover; background:#1b2a4a; display:block; box-shadow:0 0 0 2px var(--m,var(--line)),0 0 16px -2px var(--m,transparent); }
+  .avatar .deco { position:absolute; left:50%; top:50%; width:140%; height:140%; transform:translate(-50%,-50%); pointer-events:none; }
+  .rk { position:absolute; right:-5px; bottom:-5px; width:22px; height:22px; border-radius:50%; background:var(--m); color:#150f00; font:700 12px var(--f); display:grid; place-items:center; border:2px solid #0a1020; }
+  .tn { font-size:13px; font-weight:600; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .winner { --m:var(--gold); --av:64px; display:flex; align-items:center; gap:16px; padding:4px 10px 0; }
+  .wl { font-size:13px; font-weight:600; color:var(--gold); }
+  .wn { font-family:var(--f); font-size:20px; font-weight:700; overflow-wrap:anywhere; }
+  .note { padding:12px 16px; border-left:3px solid var(--blue); border-radius:4px 14px 14px 4px; background:rgba(79,157,255,.08); color:#d3dcf0; line-height:1.65; white-space:pre-line; max-width:68ch; }
+  .pending { color:var(--mute); font-size:14px; padding:2px 0; }
+
+  .status { text-align:center; color:var(--mute); padding:20px; }
+  .status[hidden] { display:none; }
+  .anim .event { animation:up .6s cubic-bezier(.2,.7,.2,1) calc(var(--i)*.08s) backwards; }
+  @keyframes up { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .anim .event,.live .dot { animation:none; } }
+
+  @media (max-width:600px) {
+    .wrap { padding:14px 12px 36px; }
+    h1 { font-size:26px; }
+    .panel { padding:22px 10px 14px; border-radius:18px; }
+    .tab { padding:7px 14px; font-size:13px; }
+    .event { grid-template-areas:"icon head" "body body"; column-gap:14px; padding:14px 14px 14px 18px; }
+    .ev-icon { width:72px; height:72px; border-radius:16px; }
+    .ev-name { font-size:18px; }
+    .tops { justify-content:space-around; gap:10px; padding:0; }
+    .search { padding:12px 14px 12px 44px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar"><a class="back" href="index.html">← Volver al server</a></div>
+  <input class="search" id="search" type="search" placeholder="Buscar evento o ganador..." autocomplete="off">
+  <div class="panel">
+    <h1>Eventos</h1>
+    <div class="tabs">
+      <button class="tab active" data-tab="todos">Todos</button>
+      <button class="tab" data-tab="live">En curso</button>
+      <button class="tab" data-tab="done">Terminados</button>
+    </div>
+    <div id="list" class="list"></div>
+    <div id="status" class="status">Cargando...</div>
+  </div>
+</div>
+<script>
+const DEF = "https://cdn.discordapp.com/embed/avatars/0.png";
+const TYPES = { top: "Top", comunidad: "Comunidad", sorteo: "Sorteo" };
+const STATE = { soon: "Próximamente", live: "En curso", done: "Terminado" };
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
+let events = [], users = {}, loaded = false, err = false, tab = "todos", first = true;
+
+function parse(s, end) {
+  if (!s) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+  if (m) return { d: new Date(+m[1], +m[2]-1, +m[3], end?23:0, end?59:0, end?59:0), t: false };
+  const d = new Date(s);
+  return isNaN(d) ? null : { d, t: true };
+}
+function info(e, now) {
+  const a = parse(e.start, false), b = parse(e.end || e.start, true);
+  if (!a || !b) return null;
+  return { a, b, st: now < a.d ? "soon" : now <= b.d ? "live" : "done" };
+}
+const typeOf = e => TYPES[e.type] ? e.type : (e.description ? "comunidad" : e.winner ? "sorteo" : "top");
+const fd = (p, y) => p.d.toLocaleDateString("es-AR", { day:"numeric", month:"short", ...(y ? { year:"numeric" } : {}) }).replace(/\./g, "")
+  + (p.t ? " " + p.d.toLocaleTimeString("es-AR", { hour:"2-digit", minute:"2-digit", hour12:false }) : "");
+function range(a, b) {
+  const y = a.d.getFullYear() !== b.d.getFullYear() || b.d.getFullYear() !== new Date().getFullYear();
+  if (!a.t && !b.t && a.d.toDateString() === b.d.toDateString()) return fd(a, y);
+  return `Del ${fd(a, y)} al ${fd(b, y)}`;
+}
+function span(ms) {
+  const m = Math.max(1, Math.round(ms / 60000));
+  if (m < 60) return `${m} min`;
+  const h = Math.round(m / 60);
+  if (h < 48) return `${h} h`;
+  const d = Math.round(h / 24);
+  return d < 60 ? `${d} días` : `${Math.round(d / 30)} meses`;
+}
+function rel(x, now) {
+  if (x.st === "soon") return `Empieza en ${span(x.a.d - now)}`;
+  if (x.st === "live") return `Termina en ${span(x.b.d - now)}`;
+  return `Terminó hace ${span(now - x.b.d)}`;
+}
+const U = id => users[String(id)] || { name: "Usuario", avatar: DEF };
+const iconSrc = i => /^(https?:|data:)/.test(i) || i.includes("/") ? i : `assets/icons/${i}`;
+function iconFail(img) { img.parentNode.classList.add("noimg"); img.remove(); }
+
+function avatar(u, badge) {
+  const deco = u.decoration ? `<img class="deco" src="${esc(u.decoration)}" alt="">` : "";
+  return `<div class="avatar"><img class="pfp" src="${esc(u.avatar || DEF)}" alt="" loading="lazy">${deco}${badge || ""}</div>`;
+}
+function bodyHTML(e, x) {
+  const type = typeOf(e);
+  if (type === "comunidad") return e.description ? `<div class="note">${esc(e.description)}</div>` : "";
+  if (type === "sorteo") {
+    if (!e.winner) return `<div class="pending">${x.st === "done" ? "Todavía no se cargó el ganador." : "El ganador se anuncia cuando termine el sorteo."}</div>`;
+    const u = U(e.winner);
+    return `<div class="winner">${avatar(u)}<div><div class="wl">Ganador</div><div class="wn">${esc(u.name)}</div></div></div>`;
+  }
+  const top = (e.top || []).slice(0, 3);
+  if (!top.some(Boolean)) return `<div class="pending">${x.st === "done" ? "Todavía no se cargaron los ganadores." : "Los ganadores se publican cuando termine el evento."}</div>`;
+  return `<div class="tops">${top.map((id, i) => {
+    if (!id) return "";
+    const u = U(id);
+    return `<div class="top t${i+1}">${avatar(u, `<span class="rk">${i+1}</span>`)}<div class="tn">${esc(u.name)}</div></div>`;
+  }).join("")}</div>`;
+}
+function cardHTML(e, x, i, now) {
+  const icon = e.icon ? `<img src="${esc(iconSrc(e.icon))}" alt="" onerror="iconFail(this)">` : "";
+  return `<article class="event ${x.st}" style="--i:${i}">
+    <div class="ev-icon${e.icon ? "" : " noimg"}">${icon}</div>
+    <div class="ev-head">
+      <div class="chips"><span class="chip ${x.st}"><i class="dot"></i>${STATE[x.st]}</span><span class="chip">${TYPES[typeOf(e)]}</span></div>
+      <div class="ev-name">${esc(e.name)}</div>
+      <div class="ev-dates">${range(x.a, x.b)} · ${rel(x, now)}</div>
+    </div>
+    <div class="ev-body">${bodyHTML(e, x)}</div>
+  </article>`;
+}
+function render() {
+  const list = $("list"), st = $("status"), now = new Date();
+  if (!loaded || !events.length) {
+    list.innerHTML = ""; st.hidden = false;
+    st.textContent = !loaded ? "Cargando..." : err ? "No se pudo cargar events.json. Revisá que esté en la misma carpeta que events.html." : "Todavía no hay eventos.";
+    return;
+  }
+  const q = $("search").value.trim().toLowerCase();
+  const rank = { live: 0, soon: 1, done: 2 };
+  const items = events.map(e => ({ e, x: info(e, now) })).filter(i => i.x)
+    .sort((p, r) => rank[p.x.st] - rank[r.x.st] || (p.x.st === "done" ? r.x.b.d - p.x.b.d : p.x.st === "live" ? p.x.b.d - r.x.b.d : p.x.a.d - r.x.a.d))
+    .filter(({ e, x }) => (tab === "todos" || x.st === tab) && (!q || [e.name, TYPES[typeOf(e)], e.winner && U(e.winner).name, ...(e.top || []).map(id => id && U(id).name)].filter(Boolean).join(" ").toLowerCase().includes(q)));
+  list.classList.toggle("anim", first); first = false;
+  list.innerHTML = items.map(({ e, x }, i) => cardHTML(e, x, i, now)).join("");
+  st.hidden = !!items.length;
+  if (!items.length) st.textContent = q ? "Sin resultados" : "No hay eventos en esta categoría.";
+}
+async function getJSON(f) {
+  const r = await fetch(`${f}?t=${Date.now()}`, { cache: "no-store" });
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+async function load() {
+  try { events = (await getJSON("events.json")).events || []; err = false; } catch (e) { err = true; }
+  try { users = (await getJSON("event_users.json")).users || {}; } catch (e) { users = {}; }
+  loaded = true; render();
+}
+$("search").addEventListener("input", render);
+document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => {
+  tab = b.dataset.tab;
+  document.querySelectorAll(".tab").forEach(o => o.classList.toggle("active", o === b));
+  render();
+}));
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
