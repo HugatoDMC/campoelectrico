@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794376396,
+  "updated": 1794376703,
   "users": [
     {
       "pos": 1,
@@ -22,10 +22,10 @@
       "level": 44,
       "progress": 71.7,
       "name": "Repli",
-      "avatar": "https://cdn.discordapp.com/avatars/715631964249391213/2d525936cf982c3b9b53b3fbd4a1f9f1.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/715631964249391213/b8db218751e1c17b495d8e42ecbf61b5.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": "#73d399",
+      "color": "#c1b8c6",
       "roles": [
         {
           "name": "mod",
