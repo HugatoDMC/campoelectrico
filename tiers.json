@@ -1,0 +1,82 @@
+{
+  "badge_pattern": "assets/tiers/{tier}{code}.png",
+  "categories": [
+    {
+      "id": "niveles",
+      "name": "Niveles",
+      "code": "NV",
+      "icon": "assets/tiers/NV.png"
+    },
+    {
+      "id": "arte",
+      "name": "Arte",
+      "code": "AR",
+      "icon": "assets/tiers/AR.png"
+    },
+    {
+      "id": "eventos",
+      "name": "Eventos",
+      "code": "EV",
+      "icon": "assets/tiers/EV.png"
+    },
+    {
+      "id": "vc",
+      "name": "VC",
+      "code": "VC",
+      "icon": "assets/tiers/VC.png"
+    },
+    {
+      "id": "escritura",
+      "name": "Escritura",
+      "code": "ES",
+      "icon": "assets/tiers/ES.png"
+    },
+    {
+      "id": "mudae",
+      "name": "Mudae",
+      "code": "MU",
+      "icon": "assets/tiers/MU.png"
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "code": "MC",
+      "icon": "assets/tiers/MC.png"
+    },
+    {
+      "id": "pvz",
+      "name": "Plantas vs. Zombies",
+      "code": "PZ",
+      "icon": "assets/tiers/PZ.png"
+    }
+  ],
+  "tiers": [
+    {
+      "id": "A",
+      "name": "Aficionado",
+      "points": 1
+    },
+    {
+      "id": "E",
+      "name": "Entusiasta",
+      "points": 2
+    },
+    {
+      "id": "P",
+      "name": "Practicante",
+      "points": 3
+    },
+    {
+      "id": "EX",
+      "name": "Experto",
+      "points": 4
+    },
+    {
+      "id": "M",
+      "name": "Maestro",
+      "points": 6
+    }
+  ],
+  "users": [
+  ]
+}

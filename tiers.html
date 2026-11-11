@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Server Tiers · Campo Eléctrico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#060a14; --panel:rgba(10,16,32,.82); --line:#1b2a4a; --cyan:#7fe0ff; --blue:#4f9dff; --gold:#ffc800; --text:#e8eefb; --mute:#8f9dbd; --green:#3ddc84; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Chakra Petch", system-ui, -apple-system, sans-serif; background: radial-gradient(ellipse 80% 50% at 50% 100%, #0e2a4d 0%, transparent 70%), var(--bg); background-attachment: fixed; color: var(--text); min-height: 100vh; overflow-x: hidden; }
+  a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  #fx { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+  .wrap { position: relative; z-index: 1; max-width: 980px; margin: 0 auto; padding: 22px 20px 56px; }
+
+  .topbar { display: flex; align-items: center; margin-bottom: 14px; }
+  .back { display: inline-flex; align-items: center; gap: 6px; color: var(--mute); text-decoration: none; font-size: 14px; font-weight: 600;
+          padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line); background: rgba(10,16,32,.8);
+          transition: color .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .back:hover { color: var(--gold); border-color: var(--gold); box-shadow: 0 0 14px rgba(255,200,0,.3); }
+
+  h1 { margin: 26px 0 0; text-align: center; font-size: 40px; font-weight: 700; letter-spacing: .02em; color: var(--gold); text-shadow: 0 0 18px rgba(255,200,0,.45), 0 0 2px rgba(255,200,0,.8); }
+  .sub { text-align: center; color: var(--mute); margin: 6px 0 0; font-size: 15px; }
+
+  .search { width: 100%; padding: 14px 18px 14px 46px; border-radius: 14px; border: 1px solid var(--line); color: var(--text); font-size: 16px; font-family: inherit; outline: none;
+            background: rgba(10,16,32,.85) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%238f9dbd' stroke-width='2' stroke-linecap='round'><circle cx='11' cy='11' r='7'/><path d='m20 20-3.5-3.5'/></svg>") no-repeat 16px center;
+            transition: border-color .2s, box-shadow .2s; }
+  .search::placeholder { color: var(--mute); }
+  .search:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(127,224,255,.15), 0 0 20px rgba(127,224,255,.2); }
+
+  .tabs { display: flex; gap: 10px; margin: 22px 0 0; overflow-x: auto; padding: 4px 2px 10px; scrollbar-width: thin; scrollbar-color: #34426a transparent; }
+  .tab { flex-shrink: 0; display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1px solid var(--line); background: rgba(20,32,60,.85);
+         color: var(--text); font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; transition: transform .2s, border-color .2s, box-shadow .2s; }
+  .tab img { width: 22px; height: 22px; object-fit: contain; display: block; }
+  .tab:hover { transform: translateY(-2px); border-color: var(--cyan); }
+  .tab.active { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 18px rgba(255,200,0,.28); background: rgba(40,34,10,.55); }
+
+  .list { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+  .card { position: relative; display: flex; align-items: center; gap: 16px; padding: 12px 18px 12px 14px; border-radius: 20px; overflow: hidden;
+          background: linear-gradient(90deg, rgba(20,32,60,.95), rgba(10,16,32,.9)); border: 1px solid var(--line);
+          transition: transform .25s, box-shadow .25s, border-color .25s; animation: fadeUp .5s cubic-bezier(.2,.7,.2,1) backwards; }
+  .card::before { content: ""; position: absolute; left: 0; top: 14%; bottom: 14%; width: 3px; border-radius: 0 3px 3px 0; background: var(--blue); box-shadow: 0 0 12px var(--blue); }
+  .card:hover { transform: translateX(4px); border-color: var(--gold); box-shadow: 0 0 24px rgba(255,200,0,.2), 0 10px 30px rgba(0,0,0,.4); }
+  .card:hover::before { background: var(--gold); box-shadow: 0 0 14px var(--gold); }
+  .card.top1::before { background: var(--gold); box-shadow: 0 0 14px var(--gold); }
+
+  .rank { width: 44px; flex-shrink: 0; text-align: center; font-size: 22px; font-weight: 700; color: var(--mute); }
+  .top1 .rank { color: var(--gold); text-shadow: 0 0 12px rgba(255,200,0,.6); }
+  .top2 .rank { color: #d5deef; }
+  .top3 .rank { color: #e0955a; }
+
+  .av { position: relative; width: 62px; height: 62px; flex-shrink: 0; margin: 0 6px; }
+  .av .pic { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; background: #16213d; border: 2px solid var(--cyan); box-shadow: 0 0 14px rgba(127,224,255,.3);
+             display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 22px; color: var(--gold); }
+  .av .pic img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .av .frame { position: absolute; top: -10%; left: -10%; width: 120%; height: 120%; object-fit: contain; pointer-events: none; }
+
+  .who { flex: 1; min-width: 0; }
+  .name { font-size: 19px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .score { margin-top: 2px; font-size: 14px; color: var(--cyan); font-weight: 600; }
+
+  .grid { display: grid; grid-template-columns: repeat(8, 44px); gap: 8px; flex-shrink: 0; }
+  .cell { position: relative; width: 44px; height: 44px; border-radius: 12px; background: #0a1020; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; }
+  .cell img { width: 80%; height: 80%; object-fit: contain; display: block; }
+  .cell.empty img { opacity: .22; filter: grayscale(1); }
+  .cell.empty { border-style: dashed; }
+  .cell.has { border-color: var(--tc); box-shadow: 0 0 10px color-mix(in srgb, var(--tc) 45%, transparent); }
+  .cell.sel { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .cell .pill { position: absolute; right: -5px; bottom: -5px; min-width: 20px; padding: 1px 4px; border-radius: 999px; background: var(--tc); color: #060a14; font-size: 10px; font-weight: 700; text-align: center; line-height: 16px; }
+
+  .msg { text-align: center; color: var(--mute); padding: 40px 0; }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .card, .back, .tab { animation: none; transition: none; } }
+
+  @media (max-width: 860px) {
+    .card { flex-wrap: wrap; row-gap: 12px; }
+    .who { flex: 1 1 calc(100% - 190px); }
+    .grid { grid-template-columns: repeat(4, 44px); margin-left: 50px; }
+  }
+  @media (max-width: 480px) {
+    h1 { font-size: 28px; }
+    .search { padding: 12px 14px 12px 44px; }
+    .back { font-size: 13px; padding: 8px 13px; }
+    .rank { width: 32px; font-size: 18px; }
+    .av { width: 52px; height: 52px; margin: 0 4px; }
+    .name { font-size: 17px; }
+    .grid { margin-left: 0; width: 100%; grid-template-columns: repeat(8, 1fr); gap: 5px; }
+    .cell { width: 100%; height: auto; aspect-ratio: 1; border-radius: 9px; }
+    .cell .pill { font-size: 8px; min-width: 15px; line-height: 12px; right: -3px; bottom: -3px; }
+  }
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="index.html">← Volver al server</a>
+  </div>
+
+  <input class="search" id="search" type="search" placeholder="Buscar..." autocomplete="off">
+
+  <h1>Server Tiers</h1>
+  <p class="sub">Rangos de la comunidad por categoría</p>
+
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="list" id="list"><div class="msg">Cargando…</div></div>
+</div>
+
+<script>
+const TIER_COLORS = { A: "#8f9dbd", E: "#3ddc84", P: "#4f9dff", EX: "#c58bff", M: "#ffc800" };
+
+let DATA = null, current = "overall", query = "";
+
+/* ---------- Datos ---------- */
+async function load() {
+  try {
+    const r = await fetch(`tiers.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    DATA = await r.json();
+    DATA.pts = Object.fromEntries(DATA.tiers.map(t => [t.id, t.points]));
+    DATA.tname = Object.fromEntries(DATA.tiers.map(t => [t.id, t.name]));
+    buildTabs();
+    render();
+  } catch (e) {
+    console.warn("No se pudo leer tiers.json:", e);
+    document.getElementById("list").innerHTML = '<div class="msg">No se pudo cargar tiers.json</div>';
+  }
+}
+
+const total = u => Object.values(u.tiers || {}).reduce((s, t) => s + (DATA.pts[t] || 0), 0);
+const badgeUrl = (tier, cat) => DATA.badge_pattern.replace("{tier}", tier).replace("{code}", cat.code);
+
+/* ---------- Pestañas ---------- */
+function buildTabs() {
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = "";
+  const items = [{ id: "overall", name: "Overall", icon: null }, ...DATA.categories];
+  for (const c of items) {
+    const b = document.createElement("button");
+    b.className = "tab" + (c.id === current ? " active" : "");
+    b.type = "button";
+    b.setAttribute("role", "tab");
+    if (c.icon) {
+      const i = new Image();
+      i.alt = "";
+      i.src = c.icon;
+      i.onerror = () => i.remove();
+      b.appendChild(i);
+    }
+    b.appendChild(document.createTextNode(c.name));
+    b.onclick = () => {
+      current = c.id;
+      tabs.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t === b));
+      render();
+    };
+    tabs.appendChild(b);
+  }
+}
+
+/* ---------- Tarjetas ---------- */
+function render() {
+  const list = document.getElementById("list");
+  const score = u => current === "overall" ? total(u) : (DATA.pts[u.tiers?.[current]] || 0);
+
+  let users = DATA.users.filter(u => current === "overall" || u.tiers?.[current]);
+  users.sort((a, b) => score(b) - score(a) || a.name.localeCompare(b.name));
+  // posición real (empates comparten puesto), antes de filtrar por búsqueda
+  const ranked = users.map(u => ({ u, pos: 1 + users.filter(o => score(o) > score(u)).length }));
+
+  const q = query.trim().toLowerCase();
+  const shown = q ? ranked.filter(({ u }) => u.name.toLowerCase().includes(q) || String(u.id).includes(q)) : ranked;
+
+  list.innerHTML = "";
+  if (!shown.length) {
+    list.innerHTML = `<div class="msg">${q ? "No se encontró ningún usuario." : "Todavía no hay nadie en esta categoría."}</div>`;
+    return;
+  }
+  shown.forEach(({ u, pos }, i) => {
+    const card = card_(u, pos, score(u));
+    card.style.animationDelay = `${Math.min(i, 12) * 0.04}s`;
+    list.appendChild(card);
+  });
+}
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text != null) e.textContent = text;
+  return e;
+}
+
+function card_(u, pos, sc) {
+  const c = el("article", `card${pos <= 3 ? " top" + pos : ""}`);
+  c.appendChild(el("div", "rank", `#${pos}`));
+
+  const av = el("div", "av");
+  const pic = el("div", "pic", (u.name || "?").charAt(0).toUpperCase());
+  if (u.avatar) {
+    const img = new Image();
+    img.alt = ""; img.referrerPolicy = "no-referrer";
+    img.onload = () => { pic.textContent = ""; pic.appendChild(img); };
+    img.src = u.avatar;
+  }
+  av.appendChild(pic);
+  if (u.frame) {
+    const f = new Image();
+    f.className = "frame"; f.alt = ""; f.referrerPolicy = "no-referrer";
+    f.onerror = () => f.remove();
+    f.src = u.frame;
+    av.appendChild(f);
+  }
+  c.appendChild(av);
+
+  const who = el("div", "who");
+  who.appendChild(el("div", "name", u.name));
+  const txt = current === "overall"
+    ? `${sc} pts`
+    : `${DATA.tname[u.tiers[current]]} · +${sc} pts`;
+  who.appendChild(el("div", "score", txt));
+  c.appendChild(who);
+
+  const grid = el("div", "grid");
+  for (const cat of DATA.categories) {
+    const t = u.tiers?.[cat.id];
+    const cell = el("div", "cell" + (t ? " has" : " empty") + (cat.id === current ? " sel" : ""));
+    cell.title = t ? `${cat.name} · ${DATA.tname[t]} (+${DATA.pts[t]})` : `${cat.name} · sin rango`;
+    if (t) cell.style.setProperty("--tc", TIER_COLORS[t] || "#7fe0ff");
+
+    const img = new Image();
+    img.alt = "";
+    img.src = t ? badgeUrl(t, cat) : cat.icon;
+    img.onerror = () => {               // sin insignia propia: icono general + letra del tier
+      if (img.dataset.fb || !t) { img.remove(); return; }
+      img.dataset.fb = "1";
+      img.src = cat.icon;
+      cell.appendChild(el("span", "pill", t));
+    };
+    cell.appendChild(img);
+    grid.appendChild(cell);
+  }
+  c.appendChild(grid);
+  return c;
+}
+
+document.getElementById("search").addEventListener("input", e => { query = e.target.value; if (DATA) render(); });
+
+/* ---------- Rayos celestes desde abajo (igual que el index) ---------- */
+const canvas = document.getElementById("fx");
+const ctx = canvas.getContext("2d");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let W = 0, H = 0, bolts = [];
+
+function newBolt(initial) {
+  return { x: Math.random() * W, y: initial ? Math.random() * H : H + Math.random() * 120, speed: 0.6 + Math.random() * 1.6,
+           len: 40 + Math.random() * 90, width: 0.8 + Math.random() * 1.6, alpha: 0.25 + Math.random() * 0.55, seed: Math.random() * 1000 };
+}
+function resizeCanvas() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  W = window.innerWidth; H = window.innerHeight;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  bolts = Array.from({ length: Math.max(12, Math.round(W / 45)) }, () => newBolt(true));
+}
+function drawBolt(b, t) {
+  const segs = 6, step = b.len / segs;
+  let x = b.x, y = b.y;
+  ctx.beginPath(); ctx.moveTo(x, y);
+  for (let i = 1; i <= segs; i++) { y -= step; x += Math.sin(b.seed + t * 0.003 + i * 1.7) * 4; ctx.lineTo(x, y); }
+  ctx.strokeStyle = `rgba(150, 225, 255, ${b.alpha})`;
+  ctx.lineWidth = b.width; ctx.shadowColor = "rgba(120, 210, 255, .9)"; ctx.shadowBlur = 10; ctx.lineCap = "round";
+  ctx.stroke();
+}
+function frame(t) {
+  ctx.clearRect(0, 0, W, H);
+  for (let i = 0; i < bolts.length; i++) {
+    const b = bolts[i];
+    b.y -= b.speed * 1.4;
+    if (b.y + b.len < -20) bolts[i] = newBolt(false); else drawBolt(b, t);
+  }
+  requestAnimationFrame(frame);
+}
+if (!reduceMotion) { resizeCanvas(); window.addEventListener("resize", resizeCanvas); requestAnimationFrame(frame); }
+else canvas.style.display = "none";
+
+load();
+</script>
+</body>
+</html>
