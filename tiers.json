@@ -84,7 +84,8 @@
       "avatar": "https://cdn.discordapp.com/avatars/845486993155686406/ff57a62efa4c64557e57493c89f8a2b0.png?size=256",
       "frame": "https://cdn.discordapp.com/avatar-decoration-presets/a_d943453ba3b3f0286c0a76a3b0b0f896.png",
       "tiers": {
-        "minecraft": "M"
+        "minecraft": "M",
+        "niveles": "P"
       }
     }
   ]
