@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794587627,
+  "updated": 1794587967,
   "users": [
     {
       "pos": 1,
@@ -916,10 +916,10 @@
       "level": 12,
       "progress": 25.2,
       "name": "Gabo",
-      "avatar": "https://cdn.discordapp.com/avatars/1360032491377004717/1b67b16c5fa0fb9135c61c9f158a4da3.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/1360032491377004717/e645887c4aa285e41d97d28011731480.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_fec887e27568cf62cc5ca44253eace73.png?size=96",
       "banner": null,
-      "color": "#0061ff",
+      "color": "#f4ff4b",
       "roles": []
     },
     {
