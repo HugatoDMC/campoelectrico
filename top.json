@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794588968,
+  "updated": 1794589309,
   "users": [
     {
       "pos": 1,
@@ -1233,9 +1233,9 @@
       "level": 8,
       "progress": 0.7,
       "name": "Retr0",
-      "avatar": "https://cdn.discordapp.com/avatars/1395110488127574089/868206f1d8c0356f074a752664b53cd9.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/1395110488127574089/a_868206f1d8c0356f074a752664b53cd9.gif?size=1024",
       "decoration": null,
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/1395110488127574089/fb2b0c61c9fa4de33cf13d949a6c0567.png?size=512",
       "color": "#0f0f0f",
       "roles": []
     },
