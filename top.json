@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794613052,
+  "updated": 1794613380,
   "users": [
     {
       "pos": 1,
@@ -183,9 +183,9 @@
       "level": 34,
       "progress": 41.7,
       "name": "Daniel",
-      "avatar": "https://cdn.discordapp.com/avatars/1117559388643790929/65a55010bc756bc6ff415345cbe06c18.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/1117559388643790929/c384d772257ab821b9c0e9a28114d0ed.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_22db6b911f5ad54f3939d665fe2a88cc.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/1117559388643790929/a_c0e182b3324eb2e9a52bfd6e9cdb0a45.gif?size=512",
+      "banner": null,
       "color": "#510027",
       "roles": []
     },
