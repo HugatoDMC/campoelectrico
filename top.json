@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794531151,
+  "updated": 1794531545,
   "users": [
     {
       "pos": 1,
@@ -380,7 +380,7 @@
       "name": "rin𓆟",
       "avatar": "https://cdn.discordapp.com/avatars/1200305742415155300/1ffc6578a8a145224fa189bd741c134f.png?size=1024",
       "decoration": null,
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/1200305742415155300/a_4038da958b9b10fbbbfeb3a6c318869f.gif?size=512",
       "color": "#7c7c7c",
       "roles": []
     },
