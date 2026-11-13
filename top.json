@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794586623,
+  "updated": 1794586953,
   "users": [
     {
       "pos": 1,
@@ -312,11 +312,11 @@
       "xp": 426485,
       "level": 27,
       "progress": 30.9,
-      "name": "1061435806184656967",
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "name": "ElGatoGamingXD",
+      "avatar": "https://cdn.discordapp.com/avatars/1061435806184656967/2d856d2140e72760e3c8342dfff6bccd.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c7d0b92c2c06bbb3fed297b34a51d5e5.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/1061435806184656967/a_22b6801a1207bb53e49ff65261c0f65e.gif?size=512",
+      "color": "#a200ff",
       "roles": []
     },
     {
@@ -325,11 +325,11 @@
       "xp": 402934,
       "level": 26,
       "progress": 58.3,
-      "name": "889519969249927208",
-      "avatar": null,
-      "decoration": null,
+      "name": "Hazy",
+      "avatar": "https://cdn.discordapp.com/avatars/889519969249927208/cac413a107cdec284c328e67035f5207.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_5e8abacc7a7454d6b08b5cc84cac1d80.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#3c819f",
       "roles": []
     },
     {
@@ -351,11 +351,11 @@
       "xp": 385857,
       "level": 26,
       "progress": 4.8,
-      "name": "1027214243885482004",
-      "avatar": null,
+      "name": "'",
+      "avatar": "https://cdn.discordapp.com/avatars/1027214243885482004/2a2f5bf78106e9c54720adef553fd521.png?size=1024",
       "decoration": null,
-      "banner": null,
-      "color": null,
+      "banner": "https://cdn.discordapp.com/banners/1027214243885482004/a_a0b6fa374c3d98b2af7ad4d248cf8c5e.gif?size=512",
+      "color": "#131211",
       "roles": []
     },
     {
@@ -364,11 +364,11 @@
       "xp": 349691,
       "level": 24,
       "progress": 85.7,
-      "name": "1366659650006679587",
-      "avatar": null,
+      "name": "Nosewea",
+      "avatar": "https://cdn.discordapp.com/avatars/1366659650006679587/8789dad70cddce8b64b126cf02574ec3.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": null,
+      "color": "#20eaea",
       "roles": []
     },
     {
@@ -403,11 +403,11 @@
       "xp": 306822,
       "level": 23,
       "progress": 35.3,
-      "name": "709595326293737482",
-      "avatar": null,
+      "name": "Soy_Bry",
+      "avatar": "https://cdn.discordapp.com/avatars/709595326293737482/ed2ce00ecd88e66dde46db7503275904.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": null,
+      "color": "#5926bb",
       "roles": []
     },
     {
@@ -416,11 +416,11 @@
       "xp": 298959,
       "level": 23,
       "progress": 7.0,
-      "name": "1384344440730026026",
-      "avatar": null,
-      "decoration": null,
+      "name": "FunKha",
+      "avatar": "https://cdn.discordapp.com/avatars/1384344440730026026/f7474eba3fbe705927c1d296345c84bb.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#152436",
       "roles": []
     },
     {
@@ -429,11 +429,11 @@
       "xp": 269024,
       "level": 21,
       "progress": 93.6,
-      "name": "1313190329389678652",
-      "avatar": null,
-      "decoration": null,
+      "name": "Abo abocado",
+      "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/d3e3b2ba67538eba885294524c595c43.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_9b9d57a3755d56f186d3353f2c96f823.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#000000",
       "roles": []
     },
     {
@@ -442,11 +442,11 @@
       "xp": 268674,
       "level": 21,
       "progress": 92.2,
-      "name": "536691877265801216",
-      "avatar": null,
-      "decoration": null,
+      "name": "MatiasYTBER",
+      "avatar": "https://cdn.discordapp.com/avatars/536691877265801216/d3e67fb8bc37e7175a31d14b4beeaeb7.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#d6486b",
       "roles": []
     },
     {
@@ -455,11 +455,11 @@
       "xp": 265890,
       "level": 21,
       "progress": 81.1,
-      "name": "905107223066341406",
-      "avatar": null,
-      "decoration": null,
+      "name": "Iridescence",
+      "avatar": "https://cdn.discordapp.com/avatars/905107223066341406/053e4873a4ac87afda3a9ed1919f5fec.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c4daf909b5197aa6048b451a2476ebab.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#1c1b1b",
       "roles": []
     },
     {
@@ -468,11 +468,11 @@
       "xp": 263033,
       "level": 21,
       "progress": 69.7,
-      "name": "600446441189539874",
-      "avatar": null,
-      "decoration": null,
+      "name": "K♡",
+      "avatar": "https://cdn.discordapp.com/avatars/600446441189539874/7850c2066d4def8596e589b9d0c861b7.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f997880d666be69b7782bb377617b4fd.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#210021",
       "roles": []
     },
     {
@@ -481,11 +481,11 @@
       "xp": 260148,
       "level": 21,
       "progress": 58.2,
-      "name": "1317127245432619009",
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "name": "‧˚ ᛝ ꒰Gio꒱˚. ᰔ ᵎᵎ",
+      "avatar": "https://cdn.discordapp.com/avatars/1317127245432619009/a_7646c94306f737d23b6198c16d9685b4.gif?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f081c6b2c85c5ebe5df42f1c24d45bb5.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/1317127245432619009/a_8732cd133bb6248ab959c7015be39f3b.gif?size=512",
+      "color": "#755c72",
       "roles": []
     },
     {
@@ -494,11 +494,11 @@
       "xp": 240847,
       "level": 20,
       "progress": 80.2,
-      "name": "1233852517276975224",
-      "avatar": null,
-      "decoration": null,
+      "name": "SUTER",
+      "avatar": "https://cdn.discordapp.com/avatars/1233852517276975224/59bfd98bb3a39e0469b109abf2caa30e.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_41445f736db3525135b6b9e1122f2254.png?size=96",
       "banner": null,
-      "color": null,
+      "color": "#7fa9c4",
       "roles": []
     },
     {
@@ -507,11 +507,11 @@
       "xp": 219263,
       "level": 19,
       "progress": 88.7,
-      "name": "649221942355951627",
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "name": "! 🜏𝒫 ℍ𝒂𝒏𝒌 𝓢シ",
+      "avatar": "https://cdn.discordapp.com/avatars/649221942355951627/ff98b4c096e0eb4b746206d3030b511c.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f081c6b2c85c5ebe5df42f1c24d45bb5.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/649221942355951627/d5054332ab8b49c8abe98ceedeb1ad93.png?size=512",
+      "color": "#37363f",
       "roles": []
     },
     {
@@ -520,11 +520,11 @@
       "xp": 213890,
       "level": 19,
       "progress": 64.8,
-      "name": "1463603991093973093",
-      "avatar": null,
+      "name": "brandy",
+      "avatar": "https://cdn.discordapp.com/avatars/1463603991093973093/48fb03feb3c6090142f70dbd07909cd1.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": null,
+      "color": "#4a0560",
       "roles": []
     },
     {
@@ -533,11 +533,11 @@
       "xp": 205886,
       "level": 19,
       "progress": 29.1,
-      "name": "1455421790259253445",
-      "avatar": null,
+      "name": "Adr ;v",
+      "avatar": "https://cdn.discordapp.com/avatars/1455421790259253445/6afebc19509f7ca3fabd4c61e0baff26.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": null,
+      "color": "#98b9b9",
       "roles": []
     },
     {
@@ -546,11 +546,11 @@
       "xp": 202509,
       "level": 19,
       "progress": 14.1,
-      "name": "845486993155686406",
-      "avatar": null,
-      "decoration": null,
-      "banner": null,
-      "color": null,
+      "name": "! HugatoDMC",
+      "avatar": "https://cdn.discordapp.com/avatars/845486993155686406/28e72514321d4e4eed38f22b633aca9d.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_d943453ba3b3f0286c0a76a3b0b0f896.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/845486993155686406/c65a360e6ef204c51be3f45ceaeff3a7.png?size=512",
+      "color": "#5d078f",
       "roles": []
     },
     {
