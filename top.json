@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794782207,
+  "updated": 1794782545,
   "users": [
     {
       "pos": 1,
@@ -864,10 +864,10 @@
       "level": 12,
       "progress": 79.4,
       "name": "Raff",
-      "avatar": "https://cdn.discordapp.com/avatars/1226264836170584208/0927853d252482d224d1cb9c21a21368.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/1226264836170584208/7d1d2d13899b489c914c179c9250aa56.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": "#73cfff",
+      "color": "#c4dee4",
       "roles": []
     },
     {
