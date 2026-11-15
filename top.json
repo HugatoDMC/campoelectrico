@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794785236,
+  "updated": 1794785568,
   "users": [
     {
       "pos": 1,
@@ -429,10 +429,10 @@
       "xp": 269024,
       "level": 21,
       "progress": 93.6,
-      "name": "Abo abocado",
-      "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/d3e3b2ba67538eba885294524c595c43.png?size=1024",
-      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_d3da36040163ee0f9176dfe7ced45cdc.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/1313190329389678652/c9e6639e6a8420d63e0a322ca15c186b.png?size=512",
+      "name": "¿Kanaria?",
+      "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/a_d525dbfe6e862190c8120386c6f9f6e0.gif?size=1024",
+      "decoration": null,
+      "banner": "https://cdn.discordapp.com/banners/1313190329389678652/44ad39dd523be0f366858bdd29c67cc6.png?size=512",
       "color": "#000000",
       "roles": []
     },
