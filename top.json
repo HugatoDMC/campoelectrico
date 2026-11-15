@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794715216,
+  "updated": 1794715544,
   "users": [
     {
       "pos": 1,
@@ -208,9 +208,9 @@
       "xp": 651027,
       "level": 33,
       "progress": 32.3,
-      "name": "Pirobito (la trilogía)",
-      "avatar": "https://cdn.discordapp.com/avatars/855931950066040902/9f965b4e04699e8cfbb522263966b0f9.png?size=1024",
-      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_1970eaeb65b05a09248e69105945cb19.png?size=96",
+      "name": "Pirobito (live action)",
+      "avatar": "https://cdn.discordapp.com/avatars/855931950066040902/63876b0b9ea34b377a40dd431a7d5484.png?size=1024",
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_09880c0438c90c615fd9a1b2439f7ee6.png?size=96",
       "banner": null,
       "color": "#5c1800",
       "roles": []
