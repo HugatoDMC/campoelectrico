@@ -110,6 +110,7 @@
   <div class="list" id="list"><div class="msg">Cargando…</div></div>
 </div>
 
+<script src="profile.js"></script>
 <script>
 const TIER_COLORS = { A: "#8f9dbd", E: "#3ddc84", P: "#4f9dff", EX: "#c58bff", M: "#ffc800" };
 
@@ -243,6 +244,8 @@ function card_(u, pos, sc) {
     grid.appendChild(cell);
   }
   c.appendChild(grid);
+  c.style.cursor = "pointer"; c.tabIndex = 0;
+  c.onclick = () => openProfile(u);
   return c;
 }
 

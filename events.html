@@ -97,6 +97,7 @@
     <div id="status" class="status">Cargando...</div>
   </div>
 </div>
+<script src="profile.js"></script>
 <script>
 const DEF = "https://cdn.discordapp.com/embed/avatars/0.png";
 const TYPES = { top: "Top", comunidad: "Comunidad", sorteo: "Sorteo" };
@@ -138,13 +139,13 @@ function rel(x, now) {
   if (x.st === "live") return `Termina en ${span(x.b.d - now)}`;
   return `Terminó hace ${span(now - x.b.d)}`;
 }
-const U = id => users[String(id)] || { name: "Usuario", avatar: DEF };
+const U = id => ({ ...(users[String(id)] || { name: "Usuario", avatar: DEF }), id: String(id) });
 const iconSrc = i => /^(https?:|data:)/.test(i) || i.includes("/") ? i : `assets/icons/${i}`;
 function iconFail(img) { img.parentNode.classList.add("noimg"); img.remove(); }
 
 function avatar(u, badge) {
   const deco = u.decoration ? `<img class="deco" src="${esc(u.decoration)}" alt="">` : "";
-  return `<div class="avatar"><img class="pfp" src="${esc(u.avatar || DEF)}" alt="" loading="lazy">${deco}${badge || ""}</div>`;
+  return `<div class="avatar" data-id="${esc(u.id || "")}" style="cursor:pointer"><img class="pfp" src="${esc(u.avatar || DEF)}" alt="" loading="lazy">${deco}${badge || ""}</div>`;
 }
 function bodyHTML(e, x) {
   const type = typeOf(e);
@@ -202,6 +203,7 @@ async function load() {
   loaded = true; render();
 }
 $("search").addEventListener("input", render);
+document.addEventListener("click", e => { const a = e.target.closest(".avatar[data-id]"); if (a && a.dataset.id) openProfile({ ...(users[a.dataset.id] || {}), id: a.dataset.id }); });
 document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => {
   tab = b.dataset.tab;
   document.querySelectorAll(".tab").forEach(o => o.classList.toggle("active", o === b));

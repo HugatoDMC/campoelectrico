@@ -176,6 +176,7 @@
   </div>
 </div>
 
+<script src="profile.js"></script>
 <script>
 const DATA_FILES = { actual: "top.json", y2025: "2025.json" };
 const TITLES = { actual: "Top Niveles", y2025: "Top Niveles 2025" };
@@ -317,24 +318,7 @@ function render(term = "") {
 }
 
 function openModal(u) {
-  let rolesBlock = "";
-  if (mode === "actual") {
-    const roles = u.roles || [];
-    const chips = roles.length
-      ? roles.map(r => {
-          const c = safeColor(r.color, "#9aa6c2");
-          return `<span class="chip" style="border-color:${c};color:${c}">${esc(r.name)}</span>`;
-        }).join("")
-      : `<div class="sub">Sin roles</div>`;
-    rolesBlock = `<h2>Roles en el server</h2><div class="roles">${chips}</div>`;
-  }
-
-  document.getElementById("modal-body").innerHTML = `
-    ${avatarHTML(u)}
-    <div class="name" style="margin-top:14px">${esc(u.name)}</div>
-    <div class="sub">#${u.pos} · Nivel ${u.level} · ${fmt(u.xp)} XP</div>
-    ${rolesBlock}`;
-  document.getElementById("modal").hidden = false;
+  openProfile(u, { pos: u.pos, noRoles: mode !== "actual" });
 }
 
 function closeModal() {
