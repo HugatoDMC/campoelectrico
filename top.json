@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794795993,
+  "updated": 1794796333,
   "users": [
     {
       "pos": 1,
@@ -48,9 +48,9 @@
       "level": 51,
       "progress": 45.3,
       "name": "EkiisD",
-      "avatar": "https://cdn.discordapp.com/avatars/623943470750629888/a_1d58c74e260d2f4edfd3eb0ec9b9f966.gif?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/623943470750629888/1d58c74e260d2f4edfd3eb0ec9b9f966.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_13913a00bd9990ab4102a3bf069f0f3f.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/623943470750629888/a_965a3c41563b20a9967febf3dac562fa.gif?size=512",
+      "banner": null,
       "color": "#281726",
       "roles": []
     },
