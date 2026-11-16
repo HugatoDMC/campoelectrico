@@ -26,9 +26,9 @@ const css = `
 .pf-sub{font-size:14px;color:#8f9dbd;margin-top:4px}
 .pf h2{margin:20px 0 0;font-size:15px;font-weight:600;color:#7fe0ff}
 .pf-bs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:12px}
-.pf-b{--tc:#7fe0ff;position:relative;width:44px;height:44px;padding:0;border-radius:12px;background:#0a1020;border:1px solid var(--tc);box-shadow:0 0 10px color-mix(in srgb,var(--tc) 45%,transparent);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--tc);font-weight:700}
-.pf-b img{width:80%;height:80%;object-fit:contain}
-.pf-b.sm{width:28px;height:28px;border-radius:8px}
+.pf-b{--tc:#7fe0ff;position:relative;width:48px;height:48px;padding:0;background:none;border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;color:var(--tc);font-weight:700;filter:drop-shadow(0 0 6px color-mix(in srgb,var(--tc) 55%,transparent))}
+.pf-b img{width:100%;height:100%;object-fit:contain}
+.pf-b.sm{width:30px;height:30px}
 .pf-b .pill{position:absolute;right:-5px;bottom:-5px;min-width:20px;padding:1px 4px;border-radius:999px;background:var(--tc);color:#060a14;font-size:10px;line-height:16px}
 .pf-roles{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:12px}
 .pf-chip{padding:6px 12px;border-radius:999px;font-size:13px;border:1px solid #5b6478;background:rgba(255,255,255,.04)}
@@ -41,12 +41,12 @@ async function getJSON(f) {
 }
 async function data() {
   if (cache && Date.now() - at < 60000) return cache;
-  const [top, tiers] = await Promise.all([getJSON("top.json"), getJSON("tiers.json")]);
-  at = Date.now(); return (cache = { top: top?.users || [], T: tiers });
+  const [top, tiers, staff] = await Promise.all([getJSON("top.json"), getJSON("tiers.json"), getJSON("staff.json")]);
+  at = Date.now(); return (cache = { top: top?.users || [], T: tiers, S: staff?.users || staff || {} });
 }
-function staffOf(p) {
-  const f = new Set([norm(p.staff), ...(p.roles || []).map(r => norm(r.name))]);
-  let best = null; STAFF.forEach(s => { if (f.has(s.id)) best = s; }); return best;
+function staffOf(p, S) {                              // rango asignado a mano en staff.json: { "ID": "admin" }
+  const r = norm(S[String(idOf(p))]);
+  return STAFF.find(s => s.id === r) || null;
 }
 function tierBadges(p, T) {
   if (!T?.categories) return [];
@@ -87,14 +87,14 @@ function ensure() {
 
 async function openProfile(user, o = {}) {
   ensure();
-  const { top, T } = await data();
+  const { top, T, S } = await data();
   const tp = top.find(x => same(x, user)) || {};
   const tu = (T?.users || []).find(x => same(x, user)) || {};
   const p = { ...tp, ...tu, ...user };
   p.decoration = p.decoration || p.frame || tp.decoration;
   p.avatar = user.avatar || tp.avatar || tu.avatar || DEF;
 
-  const tb = tierBadges(p, T), st = staffOf(p);
+  const tb = tierBadges(p, T), st = staffOf(p, S);
   const rare = tb.reduce((m, b) => !m || b.r > m.r ? b : m, null);
   const main = st ? { name: st.name, src: st.src, color: st.color } : rare;
   const all = [...(st ? [{ name: st.name, src: st.src, color: st.color }] : []), ...tb];
