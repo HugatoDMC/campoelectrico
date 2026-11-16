@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794869504,
+  "updated": 1794869698,
   "users": [
     {
       "pos": 1,
@@ -13,7 +13,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_4539f720c2c576feca9de41b8dc413e8.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1441952431310246075/a_3dd90296733eceac7af3d2f0c13ad6a2.gif?size=512",
       "color": "#def8ff",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 2,
@@ -26,7 +28,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_d3da36040163ee0f9176dfe7ced45cdc.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/722897072898179154/ee67000e4de19d13122e23f6bd443f7a.png?size=512",
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 3,
@@ -39,7 +43,9 @@
       "decoration": null,
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 4,
@@ -52,7 +58,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_13913a00bd9990ab4102a3bf069f0f3f.png?size=96",
       "banner": null,
       "color": "#d68c7e",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 5,
@@ -65,7 +73,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f997880d666be69b7782bb377617b4fd.png?size=96",
       "banner": null,
       "color": "#051b57",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 6,
@@ -78,7 +88,9 @@
       "decoration": null,
       "banner": null,
       "color": "#e6b2e1",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 7,
@@ -91,7 +103,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_ab6beffdbc7e82cd59af53b845f13a3c.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1066420339015430204/a_26ffec280edb435f99241518688a03e7.gif?size=512",
       "color": "#f5a5cd",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 8,
@@ -104,7 +118,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_22db6b911f5ad54f3939d665fe2a88cc.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1391901918040686766/5bfe09887948371bff88c655f2097ca9.png?size=512",
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 9,
@@ -117,7 +133,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_13913a00bd9990ab4102a3bf069f0f3f.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/889565110744518677/a_9a1bf39cf09ec1029b71890fda4ad596.gif?size=512",
       "color": "#15006a",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 10,
@@ -130,7 +148,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_1bb935d2475c15b79d48a27deb060b70.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1250810900051529768/a_ba5ca35e330314c011d6cf65bab879ab.gif?size=512",
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": "2026-11-05",
+      "staff": null
     },
     {
       "pos": 11,
@@ -143,7 +163,9 @@
       "decoration": null,
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 12,
@@ -156,7 +178,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_7793b9c298459b048f36d1d93181f064.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/649076372467220480/994e568ccd40d7b33dc698662d77878f.png?size=512",
       "color": "#af00ff",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 13,
@@ -174,7 +198,9 @@
           "name": "mod",
           "color": "#2ecc71"
         }
-      ]
+      ],
+      "joined": "2026-11-04",
+      "staff": "mod"
     },
     {
       "pos": 14,
@@ -187,7 +213,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_22db6b911f5ad54f3939d665fe2a88cc.png?size=96",
       "banner": null,
       "color": "#510027",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 15,
@@ -200,7 +228,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_e3ec2d8cccdcb68819b2910c0787d3a4.png?size=96",
       "banner": null,
       "color": "#ffffff",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 16,
@@ -213,7 +243,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_09880c0438c90c615fd9a1b2439f7ee6.png?size=96",
       "banner": null,
       "color": "#5c1800",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 17,
@@ -226,7 +258,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f1a2dc0cceccbc3da0838627460bd6ee.png?size=96",
       "banner": null,
       "color": "#60c0d1",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 18,
@@ -239,7 +273,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 19,
@@ -252,7 +288,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/947661166090522655/a_e10d710d6848285b8eee0d93afe78cca.gif?size=512",
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 20,
@@ -265,7 +303,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_28455bc12c3d5ad1366b5664b6c0a8f1.png?size=96",
       "banner": null,
       "color": "#c5bbc9",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 21,
@@ -278,7 +318,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_ab6beffdbc7e82cd59af53b845f13a3c.png?size=96",
       "banner": null,
       "color": "#8d30ba",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 22,
@@ -291,7 +333,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3f5af01be989c3690d901f33dc4e508a.png?size=96",
       "banner": null,
       "color": "#3a0101",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 23,
@@ -304,7 +348,9 @@
       "decoration": null,
       "banner": null,
       "color": "#fa7c00",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 24,
@@ -317,7 +363,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c7d0b92c2c06bbb3fed297b34a51d5e5.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1061435806184656967/a_22b6801a1207bb53e49ff65261c0f65e.gif?size=512",
       "color": "#a200ff",
-      "roles": []
+      "roles": [],
+      "joined": "2026-11-02",
+      "staff": null
     },
     {
       "pos": 25,
@@ -330,7 +378,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_5e8abacc7a7454d6b08b5cc84cac1d80.png?size=96",
       "banner": null,
       "color": "#3c819f",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 26,
@@ -343,7 +393,9 @@
       "decoration": null,
       "banner": null,
       "color": "#0322fe",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 27,
@@ -356,7 +408,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1027214243885482004/a_a0b6fa374c3d98b2af7ad4d248cf8c5e.gif?size=512",
       "color": "#131211",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 28,
@@ -369,7 +423,9 @@
       "decoration": null,
       "banner": null,
       "color": "#20eaea",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 29,
@@ -382,7 +438,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1200305742415155300/ff8ab6d576b74d3f910abaeea21cecac.png?size=512",
       "color": "#7c7c7c",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 30,
@@ -395,7 +453,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 31,
@@ -408,7 +468,9 @@
       "decoration": null,
       "banner": null,
       "color": "#5926bb",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 32,
@@ -421,7 +483,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=96",
       "banner": null,
       "color": "#152436",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 33,
@@ -434,7 +498,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1313190329389678652/44ad39dd523be0f366858bdd29c67cc6.png?size=512",
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 34,
@@ -447,7 +513,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=96",
       "banner": null,
       "color": "#d6486b",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 35,
@@ -460,7 +528,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c4daf909b5197aa6048b451a2476ebab.png?size=96",
       "banner": null,
       "color": "#1c1b1b",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 36,
@@ -473,7 +543,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f997880d666be69b7782bb377617b4fd.png?size=96",
       "banner": null,
       "color": "#210021",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 37,
@@ -486,7 +558,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f081c6b2c85c5ebe5df42f1c24d45bb5.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1317127245432619009/a_b2dfd75f3163f49141deffb9d1a7c57a.gif?size=512",
       "color": "#755c72",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 38,
@@ -499,7 +573,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_41445f736db3525135b6b9e1122f2254.png?size=96",
       "banner": null,
       "color": "#7fa9c4",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 39,
@@ -512,7 +588,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f081c6b2c85c5ebe5df42f1c24d45bb5.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/649221942355951627/d5054332ab8b49c8abe98ceedeb1ad93.png?size=512",
       "color": "#37363f",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 40,
@@ -525,7 +603,9 @@
       "decoration": null,
       "banner": null,
       "color": "#4a0560",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 41,
@@ -538,7 +618,9 @@
       "decoration": null,
       "banner": null,
       "color": "#98b9b9",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 42,
@@ -551,7 +633,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_b0e4807f3437fd951f7938e682bb7a0b.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/845486993155686406/c65a360e6ef204c51be3f45ceaeff3a7.png?size=512",
       "color": "#5d078f",
-      "roles": []
+      "roles": [],
+      "joined": "2025-12-14",
+      "staff": null
     },
     {
       "pos": 43,
@@ -564,7 +648,9 @@
       "decoration": null,
       "banner": null,
       "color": "#ba3b5f",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 44,
@@ -577,7 +663,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1393323566526632056/a_707a2b4289f9ff8e2e1830dde6656f4c.gif?size=512",
       "color": "#593b73",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 45,
@@ -590,7 +678,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_d3da36040163ee0f9176dfe7ced45cdc.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1490526983505969183/c186b5fed29032243dff898531d931e6.png?size=512",
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 46,
@@ -603,7 +693,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 47,
@@ -616,7 +708,9 @@
       "decoration": null,
       "banner": null,
       "color": "#20211c",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 48,
@@ -629,7 +723,9 @@
       "decoration": null,
       "banner": null,
       "color": "#727272",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 49,
@@ -642,7 +738,9 @@
       "decoration": null,
       "banner": null,
       "color": "#787370",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 50,
@@ -655,7 +753,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1251276588616781838/d8de820d68172a9dfb49c018bbef31bb.png?size=512",
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 51,
@@ -668,7 +768,9 @@
       "decoration": null,
       "banner": null,
       "color": "#4a1065",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 52,
@@ -681,7 +783,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f997880d666be69b7782bb377617b4fd.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/895378001724841984/79883adaf5765c1d5f6969030b33f12a.png?size=512",
       "color": "#4f1e80",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 53,
@@ -694,7 +798,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 54,
@@ -707,7 +813,9 @@
       "decoration": null,
       "banner": null,
       "color": "#ff98e1",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 55,
@@ -720,7 +828,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_1f2df17cd18e322d446dea49549dedf4.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1353844408776261707/558781604fe76df4c051aec562229b49.png?size=512",
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 56,
@@ -733,7 +843,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_aa54739e05fcfa78e9f2649e6bbffa38.png?size=96",
       "banner": null,
       "color": "#6d68b9",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 57,
@@ -746,7 +858,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_b0b3d7cf77fd2d73145e07436acb6a40.png?size=96",
       "banner": null,
       "color": "#ffa424",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 58,
@@ -764,7 +878,9 @@
           "name": "admn",
           "color": "#e91e63"
         }
-      ]
+      ],
+      "joined": "2026-11-10",
+      "staff": null
     },
     {
       "pos": 59,
@@ -777,7 +893,9 @@
       "decoration": null,
       "banner": null,
       "color": "#8cff00",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 60,
@@ -790,7 +908,9 @@
       "decoration": null,
       "banner": null,
       "color": "#332727",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 61,
@@ -803,7 +923,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 62,
@@ -816,7 +938,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_fc10280d008d9749f3e5048af8d0f54f.png?size=96",
       "banner": null,
       "color": "#febebe",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 63,
@@ -829,7 +953,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c86b11a49bb8057ce9c974a6f7ad658a.png?size=96",
       "banner": null,
       "color": "#6c6c6c",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 64,
@@ -842,7 +968,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 65,
@@ -855,7 +983,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 66,
@@ -868,7 +998,9 @@
       "decoration": null,
       "banner": null,
       "color": "#c4dee4",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 67,
@@ -881,7 +1013,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_09880c0438c90c615fd9a1b2439f7ee6.png?size=96",
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 68,
@@ -894,7 +1028,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_ab6beffdbc7e82cd59af53b845f13a3c.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/463070334006853652/0ec701afc2aff0ae4fa6e036a0dc10e6.png?size=512",
       "color": "#ff63f1",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 69,
@@ -907,7 +1043,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 70,
@@ -920,7 +1058,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_fec887e27568cf62cc5ca44253eace73.png?size=96",
       "banner": null,
       "color": "#bababa",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 71,
@@ -933,7 +1073,9 @@
       "decoration": null,
       "banner": null,
       "color": "#642727",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 72,
@@ -946,7 +1088,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1416510827862950078/a_5a364210e19f9a5da4175a77f4807d9e.gif?size=512",
       "color": "#00ffb5",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 73,
@@ -959,7 +1103,9 @@
       "decoration": null,
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 74,
@@ -972,7 +1118,9 @@
       "decoration": null,
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 75,
@@ -985,7 +1133,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 76,
@@ -998,7 +1148,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3288867bbacde931ce5f688560f9aa1c.png?size=96",
       "banner": null,
       "color": "#6f3db3",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 77,
@@ -1011,7 +1163,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 78,
@@ -1024,7 +1178,9 @@
       "decoration": null,
       "banner": null,
       "color": "#ce6169",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 79,
@@ -1042,7 +1198,9 @@
           "name": "mod",
           "color": "#2ecc71"
         }
-      ]
+      ],
+      "joined": "2026-10-23",
+      "staff": "mod"
     },
     {
       "pos": 80,
@@ -1055,7 +1213,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_9850506c85f382f6f8af97cf6d60c000.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/925528691889565778/5b520c871d0056f75bef1e112dd262f9.png?size=512",
       "color": "#c55151",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 81,
@@ -1068,7 +1228,9 @@
       "decoration": null,
       "banner": null,
       "color": "#060e15",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 82,
@@ -1081,7 +1243,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 83,
@@ -1094,7 +1258,9 @@
       "decoration": null,
       "banner": null,
       "color": "#ef68e3",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 84,
@@ -1107,7 +1273,9 @@
       "decoration": null,
       "banner": null,
       "color": "#f870ff",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 85,
@@ -1120,7 +1288,9 @@
       "decoration": null,
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 86,
@@ -1133,7 +1303,9 @@
       "decoration": null,
       "banner": null,
       "color": "#858383",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 87,
@@ -1146,7 +1318,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_a0ff7f9be49be57356dd3cf0d9c02605.png?size=96",
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 88,
@@ -1159,7 +1333,9 @@
       "decoration": null,
       "banner": null,
       "color": "#19d6e0",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 89,
@@ -1172,7 +1348,9 @@
       "decoration": null,
       "banner": null,
       "color": "#7f78fa",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 90,
@@ -1185,7 +1363,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 91,
@@ -1198,7 +1378,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_8552f9857793aed0cf816f370e2df3be.png?size=96",
       "banner": null,
       "color": "#23113c",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 92,
@@ -1211,7 +1393,9 @@
       "decoration": null,
       "banner": null,
       "color": null,
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 93,
@@ -1224,7 +1408,9 @@
       "decoration": null,
       "banner": null,
       "color": "#1a1822",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 94,
@@ -1237,7 +1423,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_bec26d0726a0f2eb7491a7cd40ac9c73.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1395110488127574089/fb2b0c61c9fa4de33cf13d949a6c0567.png?size=512",
       "color": "#0f0f0f",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 95,
@@ -1250,7 +1438,9 @@
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/1187197768037572701/e9289ef3f823da9504f737e975df3d74.png?size=512",
       "color": "#eaeaea",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 96,
@@ -1263,7 +1453,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_e3ec2d8cccdcb68819b2910c0787d3a4.png?size=96",
       "banner": null,
       "color": "#b07500",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 97,
@@ -1276,7 +1468,9 @@
       "decoration": null,
       "banner": null,
       "color": "#ff8900",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 98,
@@ -1289,7 +1483,9 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0559ecfc5e0d72ed1a2c5f1a6fd84558.png?size=96",
       "banner": null,
       "color": "#000000",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 99,
@@ -1302,7 +1498,9 @@
       "decoration": null,
       "banner": null,
       "color": "#5f5555",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     },
     {
       "pos": 100,
@@ -1315,7 +1513,9 @@
       "decoration": null,
       "banner": null,
       "color": "#222329",
-      "roles": []
+      "roles": [],
+      "joined": null,
+      "staff": null
     }
   ]
 }
