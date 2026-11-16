@@ -10,7 +10,8 @@ const DEF = "https://cdn.discordapp.com/embed/avatars/0.png";
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[c]));
 const color = (c, f) => /^#[0-9a-f]{6}$/i.test(c || "") ? c : f;
 const norm = s => String(s || "").toLowerCase().replace(/[^a-z]/g, "");
-const same = (a, b) => a.id != null && b.id != null ? String(a.id) === String(b.id) : (a.name || "").toLowerCase() === (b.name || "").toLowerCase();
+const idOf = x => x.id ?? x.user_id;
+const same = (a, b) => idOf(a) != null && idOf(b) != null ? String(idOf(a)) === String(idOf(b)) : (a.name || "").toLowerCase() === (b.name || "").toLowerCase();
 
 const css = `
 .pf{position:fixed;inset:0;background:rgba(2,5,12,.72);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:16px;z-index:100}
