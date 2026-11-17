@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794954524,
+  "updated": 1794954915,
   "users": [
     {
       "pos": 1,
@@ -463,7 +463,7 @@
       "progress": 93.6,
       "name": "🧠Kanaria🔴",
       "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/37ad9d1f97a38d870090762c82a73e2a.png?size=1024",
-      "decoration": null,
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0d70523457a737eb7f6df9645021d8be.png?size=96",
       "banner": null,
       "color": "#000000",
       "roles": [],
