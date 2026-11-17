@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794957325,
+  "updated": 1794957716,
   "users": [
     {
       "pos": 1,
@@ -134,7 +134,7 @@
       "xp": 980955,
       "level": 40,
       "progress": 32.4,
-      "name": "Walicyn",
+      "name": "Walmart",
       "avatar": "https://cdn.discordapp.com/avatars/1250810900051529768/d685f2bb81389c32b4d30ebcea48171d.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_1bb935d2475c15b79d48a27deb060b70.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1250810900051529768/a_ba5ca35e330314c011d6cf65bab879ab.gif?size=512",
@@ -177,10 +177,10 @@
       "level": 34,
       "progress": 66.7,
       "name": "Repli",
-      "avatar": "https://cdn.discordapp.com/avatars/715631964249391213/b8db218751e1c17b495d8e42ecbf61b5.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/715631964249391213/be75b5b4b37cea89ab0d531f3303bada.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": "#c1b8c6",
+      "color": "#dcbbbd",
       "roles": [
         {
           "name": "mod",
