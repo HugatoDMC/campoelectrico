@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1794962886,
+  "updated": 1794963274,
   "users": [
     {
       "pos": 1,
@@ -196,8 +196,8 @@
       "level": 34,
       "progress": 41.7,
       "name": "Daniel",
-      "avatar": "https://cdn.discordapp.com/avatars/1117559388643790929/036b12f50a39ae84ea7ef4ce71510e1b.png?size=1024",
-      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_22db6b911f5ad54f3939d665fe2a88cc.png?size=96",
+      "avatar": "https://cdn.discordapp.com/avatars/1117559388643790929/7588fc77fd946901cd29a04509828ce6.png?size=1024",
+      "decoration": null,
       "banner": null,
       "color": "#510027",
       "roles": [],
@@ -957,7 +957,7 @@
       "level": 12,
       "progress": 68.3,
       "name": "Deis",
-      "avatar": "https://cdn.discordapp.com/avatars/463070334006853652/a65106b2ebff1cd01cab2fb8e4bd20d0.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/463070334006853652/9e701e8d95dd9c8480a870a040019f21.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_ab6beffdbc7e82cd59af53b845f13a3c.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/463070334006853652/0ec701afc2aff0ae4fa6e036a0dc10e6.png?size=512",
       "color": "#ff63f1",
