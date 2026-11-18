@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795034730,
+  "updated": 1795035127,
   "users": [
     {
       "pos": 1,
@@ -338,7 +338,7 @@
       "name": "ElGatoGamingXD",
       "avatar": "https://cdn.discordapp.com/avatars/1061435806184656967/2d856d2140e72760e3c8342dfff6bccd.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c7d0b92c2c06bbb3fed297b34a51d5e5.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/1061435806184656967/a_22b6801a1207bb53e49ff65261c0f65e.gif?size=512",
+      "banner": null,
       "color": "#a200ff",
       "roles": [],
       "joined": "2026-11-02"
