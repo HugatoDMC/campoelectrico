@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795019312,
+  "updated": 1795019703,
   "users": [
     {
       "pos": 1,
@@ -743,7 +743,7 @@
       "progress": 56.5,
       "name": "My_harmony",
       "avatar": "https://cdn.discordapp.com/avatars/1548037508128833538/798d56bf6e87c396ebde1aa5c144a6db.png?size=1024",
-      "decoration": null,
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0d70523457a737eb7f6df9645021d8be.png?size=96",
       "banner": null,
       "color": null,
       "roles": [],
