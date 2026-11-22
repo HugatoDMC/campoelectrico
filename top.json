@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795313350,
+  "updated": 1795313725,
   "users": [
     {
       "pos": 1,
@@ -631,7 +631,7 @@
       "progress": 55.1,
       "name": "Ozex 💤| ZERO's",
       "avatar": "https://cdn.discordapp.com/avatars/1490526983505969183/3bb78f54261b4b67101feaee1bbf7eb5.png?size=1024",
-      "decoration": null,
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0d70523457a737eb7f6df9645021d8be.png?size=96",
       "banner": null,
       "color": "#000000",
       "roles": [],
