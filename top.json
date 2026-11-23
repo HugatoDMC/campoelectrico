@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795401408,
+  "updated": 1795401799,
   "users": [
     {
       "pos": 1,
@@ -267,7 +267,7 @@
       "progress": 1.8,
       "name": "『ᴰᵃʳᵏ』ＫłⱠⱠɆRඞ",
       "avatar": "https://cdn.discordapp.com/avatars/947661166090522655/d3f3202b26f4b0e7ef4bd9a66cad7350.png?size=1024",
-      "decoration": null,
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_617f585217021efeae67deda61fdc595.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/947661166090522655/a_e10d710d6848285b8eee0d93afe78cca.gif?size=512",
       "color": "#000000",
       "roles": [],
