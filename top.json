@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795494643,
+  "updated": 1795495029,
   "users": [
     {
       "pos": 1,
@@ -879,7 +879,7 @@
       "name": "❥Angel-ita✿",
       "avatar": "https://cdn.discordapp.com/avatars/1386852182850142268/9d98b945758cf613853e37c3a58a26ed.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_c86b11a49bb8057ce9c974a6f7ad658a.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/1386852182850142268/a_2b1c8454b1a84c0ac74081d187cedfe0.gif?size=512",
+      "banner": null,
       "color": "#ffbddc",
       "roles": [],
       "joined": null
