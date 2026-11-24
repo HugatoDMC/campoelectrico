@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795489046,
+  "updated": 1795489443,
   "users": [
     {
       "pos": 1,
@@ -181,12 +181,7 @@
       "decoration": null,
       "banner": null,
       "color": "#dcbbbd",
-      "roles": [
-        {
-          "name": "mod",
-          "color": "#2ecc71"
-        }
-      ],
+      "roles": [],
       "joined": "2026-11-04"
     },
     {
