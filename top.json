@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795479228,
+  "updated": 1795479619,
   "users": [
     {
       "pos": 1,
@@ -408,7 +408,7 @@
       "name": "Rinzhuang gonzales𓆟",
       "avatar": "https://cdn.discordapp.com/avatars/1200305742415155300/39fda3cf95d3e39942005ad003858f1d.png?size=1024",
       "decoration": null,
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/1200305742415155300/ff8ab6d576b74d3f910abaeea21cecac.png?size=512",
       "color": "#7c7c7c",
       "roles": [],
       "joined": null
