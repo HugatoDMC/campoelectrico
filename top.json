@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795571302,
+  "updated": 1795571701,
   "users": [
     {
       "pos": 1,
@@ -218,11 +218,11 @@
       "xp": 651027,
       "level": 33,
       "progress": 32.3,
-      "name": "Pirobito (live action)",
-      "avatar": "https://cdn.discordapp.com/avatars/855931950066040902/63876b0b9ea34b377a40dd431a7d5484.png?size=1024",
-      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_09880c0438c90c615fd9a1b2439f7ee6.png?size=96",
+      "name": "el propio sapo hp",
+      "avatar": "https://cdn.discordapp.com/avatars/855931950066040902/a15fb7911ca53f68f7ddeea5887ce3c8.png?size=1024",
+      "decoration": null,
       "banner": null,
-      "color": "#5c1800",
+      "color": "#c6ffbc",
       "roles": [],
       "joined": null
     },
