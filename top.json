@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795574104,
+  "updated": 1795574497,
   "users": [
     {
       "pos": 1,
@@ -218,8 +218,8 @@
       "xp": 651027,
       "level": 33,
       "progress": 32.3,
-      "name": "el propio sapo hp",
-      "avatar": "https://cdn.discordapp.com/avatars/855931950066040902/a15fb7911ca53f68f7ddeea5887ce3c8.png?size=1024",
+      "name": "pirobito",
+      "avatar": "https://cdn.discordapp.com/avatars/855931950066040902/3494d148a53e35879243b01230b5ec92.png?size=1024",
       "decoration": null,
       "banner": null,
       "color": "#c6ffbc",
@@ -459,7 +459,7 @@
       "name": "🧠Kanaria🔴",
       "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/37ad9d1f97a38d870090762c82a73e2a.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0d70523457a737eb7f6df9645021d8be.png?size=96",
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/1313190329389678652/44ad39dd523be0f366858bdd29c67cc6.png?size=512",
       "color": "#000000",
       "roles": [],
       "joined": null
