@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795576909,
+  "updated": 1795577292,
   "users": [
     {
       "pos": 1,
@@ -444,8 +444,8 @@
       "progress": 7.0,
       "name": "FunKha",
       "avatar": "https://cdn.discordapp.com/avatars/1384344440730026026/164e7018d9fbf0d8da9257edd1b9e8e7.png?size=1024",
-      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_838e8568d3798c688a05c696ec6bed5f.png?size=96",
-      "banner": null,
+      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_3c97a2d37f433a7913a1c7b7a735d000.png?size=96",
+      "banner": "https://cdn.discordapp.com/banners/1384344440730026026/a_6a3480aa68bb7f3a1bfba89e15795f99.gif?size=512",
       "color": "#152436",
       "roles": [],
       "joined": null
