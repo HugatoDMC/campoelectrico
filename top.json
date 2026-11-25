@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795617577,
+  "updated": 1795618005,
   "users": [
     {
       "pos": 1,
@@ -164,8 +164,8 @@
       "progress": 28.7,
       "name": "HaruKPS",
       "avatar": "https://cdn.discordapp.com/avatars/649076372467220480/e7a77a0ad65195c668c8097da590fb99.png?size=1024",
-      "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_7793b9c298459b048f36d1d93181f064.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/649076372467220480/994e568ccd40d7b33dc698662d77878f.png?size=512",
+      "decoration": null,
+      "banner": null,
       "color": "#af00ff",
       "roles": [],
       "joined": null
@@ -1316,9 +1316,9 @@
       "level": 8,
       "progress": 0.7,
       "name": "Retr0",
-      "avatar": "https://cdn.discordapp.com/avatars/1395110488127574089/a_eb4010bdb8a11b8f94dec530837f096b.gif?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/1395110488127574089/3ff29f1fbfe747e09b784c52b8e7bfca.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_26bc424aca3f6400c09c4dfa9eff5686.png?size=96",
-      "banner": "https://cdn.discordapp.com/banners/1395110488127574089/a_a96314106fee79a4f391ba5fca6d9031.gif?size=512",
+      "banner": "https://cdn.discordapp.com/banners/1395110488127574089/fe4c07b071e2091ad79c51aa9a7b0208.png?size=512",
       "color": "#0f0f0f",
       "roles": [],
       "joined": null
