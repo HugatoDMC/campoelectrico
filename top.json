@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795590215,
+  "updated": 1795590608,
   "users": [
     {
       "pos": 1,
@@ -64,7 +64,7 @@
       "xp": 1427149,
       "level": 47,
       "progress": 90.8,
-      "name": "Velacorn Sawagi",
+      "name": "Sawagi Velacorn",
       "avatar": "https://cdn.discordapp.com/avatars/1000627046197768202/78a5a330219ddcc80405837cc9c63411.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_f997880d666be69b7782bb377617b4fd.png?size=96",
       "banner": null,
