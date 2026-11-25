@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795619023,
+  "updated": 1795619419,
   "users": [
     {
       "pos": 1,
@@ -1232,10 +1232,10 @@
       "level": 9,
       "progress": 72.6,
       "name": "Wavii",
-      "avatar": "https://cdn.discordapp.com/avatars/834479041967947857/91cb6cce96291f303c84637ede6d851d.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/834479041967947857/1f137d60d4d59e0462436b130b14e592.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": "#19d6e0",
+      "color": "#ffffff",
       "roles": [],
       "joined": null
     },
