@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795574802,
+  "updated": 1795575193,
   "users": [
     {
       "pos": 1,
@@ -445,7 +445,7 @@
       "name": "FunKha",
       "avatar": "https://cdn.discordapp.com/avatars/1384344440730026026/164e7018d9fbf0d8da9257edd1b9e8e7.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_838e8568d3798c688a05c696ec6bed5f.png?size=96",
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/1384344440730026026/a_5206fb6bfe6324ee2dda186dc1c9a076.gif?size=512",
       "color": "#152436",
       "roles": [],
       "joined": null
@@ -456,8 +456,8 @@
       "xp": 269024,
       "level": 21,
       "progress": 93.6,
-      "name": "🧠Kanaria🔴",
-      "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/37ad9d1f97a38d870090762c82a73e2a.png?size=1024",
+      "name": "🧠Kanaria💠",
+      "avatar": "https://cdn.discordapp.com/avatars/1313190329389678652/a_d525dbfe6e862190c8120386c6f9f6e0.gif?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0d70523457a737eb7f6df9645021d8be.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/1313190329389678652/44ad39dd523be0f366858bdd29c67cc6.png?size=512",
       "color": "#000000",
