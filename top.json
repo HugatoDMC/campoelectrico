@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795658430,
+  "updated": 1795658831,
   "users": [
     {
       "pos": 1,
@@ -627,7 +627,7 @@
       "name": "Ozex 💤| ZERO's",
       "avatar": "https://cdn.discordapp.com/avatars/1490526983505969183/3bb78f54261b4b67101feaee1bbf7eb5.png?size=1024",
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_0d70523457a737eb7f6df9645021d8be.png?size=96",
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/1490526983505969183/61895811032b3a9b54f87848e825bb33.png?size=512",
       "color": "#000000",
       "roles": [],
       "joined": null
