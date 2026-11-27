@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795757970,
+  "updated": 1795758357,
   "users": [
     {
       "pos": 1,
@@ -1006,7 +1006,7 @@
       "avatar": "https://cdn.discordapp.com/avatars/1416510827862950078/0617dd765b51cf246e500ed14e4b4aa7.png?size=1024",
       "decoration": null,
       "banner": null,
-      "color": "#00ffb5",
+      "color": "#ff85a6",
       "roles": [],
       "joined": null
     },
