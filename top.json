@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795804358,
+  "updated": 1795804750,
   "users": [
     {
       "pos": 1,
@@ -587,7 +587,12 @@
       "decoration": "https://cdn.discordapp.com/avatar-decoration-presets/a_6682092b74310f3d9cadb6ab53594ac4.png?size=96",
       "banner": "https://cdn.discordapp.com/banners/845486993155686406/c65a360e6ef204c51be3f45ceaeff3a7.png?size=512",
       "color": "#5d078f",
-      "roles": [],
+      "roles": [
+        {
+          "name": "verde",
+          "color": null
+        }
+      ],
       "joined": "2025-12-14"
     },
     {
