@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795821245,
+  "updated": 1795821641,
   "users": [
     {
       "pos": 1,
@@ -588,10 +588,6 @@
       "banner": "https://cdn.discordapp.com/banners/845486993155686406/c65a360e6ef204c51be3f45ceaeff3a7.png?size=512",
       "color": "#5d078f",
       "roles": [
-        {
-          "name": "verde",
-          "color": null
-        },
         {
           "name": "Booster",
           "color": "#9b59b6"
