@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795814215,
+  "updated": 1795814610,
   "users": [
     {
       "pos": 1,
@@ -591,6 +591,10 @@
         {
           "name": "verde",
           "color": null
+        },
+        {
+          "name": "Booster",
+          "color": "#9b59b6"
         }
       ],
       "joined": "2025-12-14"
@@ -1036,7 +1040,7 @@
       "level": 11,
       "progress": 51.6,
       "name": "❝ 𝓝𝓲𝓪 ❞",
-      "avatar": "https://cdn.discordapp.com/avatars/788089543756742656/4501656138ee640ed2d48088be7b8f14.png?size=1024",
+      "avatar": "https://cdn.discordapp.com/avatars/788089543756742656/87e38d3d7e975934c75545f593e75846.png?size=1024",
       "decoration": null,
       "banner": "https://cdn.discordapp.com/banners/788089543756742656/8d9cdc759bf06d4030d54017dd3e4ed6.png?size=512",
       "color": "#000000",
