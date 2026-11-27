@@ -1,6 +1,6 @@
 {
   "server": "Campo Eléctrico",
-  "updated": 1795809276,
+  "updated": 1795809680,
   "users": [
     {
       "pos": 1,
@@ -1038,7 +1038,7 @@
       "name": "❝ 𝓝𝓲𝓪 ❞",
       "avatar": "https://cdn.discordapp.com/avatars/788089543756742656/4501656138ee640ed2d48088be7b8f14.png?size=1024",
       "decoration": null,
-      "banner": null,
+      "banner": "https://cdn.discordapp.com/banners/788089543756742656/8d9cdc759bf06d4030d54017dd3e4ed6.png?size=512",
       "color": "#000000",
       "roles": [],
       "joined": null
